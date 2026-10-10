@@ -51,63 +51,64 @@ whether you hit them:
 
 ---
 
-## 1.
+## 1. Overall accuracy is at least 0.55 on the held-out test split, on all three seeds
 
-<!-- Your criterion. It must name a number. -->
-
-
-
-**Why this target:**
-
-
-
----
-
-## 2.
-
-<!-- Your criterion. -->
-
-
-
-**Why this target:**
-
-
+**Why this target:** With four labels, a uniform guesser gets 0.25. My counts
+are roughly even, so always guessing the biggest label should get about 0.30.
+0.55 is close to double that. At 0.55 the classifier is worth running as a
+first pass over a thread. Any lower and you'd have to re-read everything it
+sorted. I didn't go higher because the test split is only about 33 posts, so
+one seed with an unlucky draw costs about 3 points per wrong answer.
 
 ---
 
-## 3.
+## 2. Macro F1 is at least 0.50 on all three seeds
 
-<!-- Your criterion. -->
-
-
-
-**Why this target:**
-
-
+**Why this target:** Accuracy can hide one label being thrown away. Macro F1
+weights all four labels equally, so it can't. It sits 0.05 below the accuracy
+target because macro F1 is always pulled down by the weakest label, and with
+about 8 test posts per label, the weakest one will be noisy.
 
 ---
 
-## 4.
+## 3. Every label has an F1 of at least 0.35 on every seed — no label is abandoned
 
-<!-- Your criterion. -->
-
-
-
-**Why this target:**
-
-
+**Why this target:** This is a floor, not a goal. `experience` is likely to be
+my thinnest label (it was about a fifth of the first 130 posts I read), so it
+will have only 6–8 posts in test. A label at 0.35 F1 is still being predicted
+and getting some right. A label at 0.00 means the model has stopped using it.
+Across three seeds, every label has 12 chances to fall below this line, so
+it's stricter than it looks.
 
 ---
 
-## 5.
+## 4. The most-confident third of test predictions is at least 0.15 more accurate than the least-confident third, on all three seeds
 
-<!-- Your criterion. -->
+(`results.json → confidence.accuracy_most_confident_third` minus
+`accuracy_least_confident_third`.)
 
+**Why this target:** The useful version of this tool is "trust the confident
+calls, read the unsure ones yourself". That only works if confidence actually
+separates right from wrong. A gap of 0.15 on thirds of about 11 posts each
+means roughly two more correct answers in the confident third. Anything
+smaller is within the noise of a split that size. I expect the confident third
+to be dominated by `chatter` ("Thanks!", "Is that for a month or a year?"),
+and the unsure third by argument/assertion posts. If the gap doesn't show up,
+my hardest boundary isn't the model's hardest boundary, which would itself be
+worth knowing.
 
+---
 
-**Why this target:**
+## 5. I agree with the staff labels on at least 23 of the 30 staff posts (≥ 0.75), using `agreement.py`
 
-
+**Why this target:** This is the only check on whether I label consistently
+that doesn't come from me. The staff notes say a rate in the 70s is normal,
+and I've set mine at the top of that band on purpose. The staff
+`analysis`/`hot_take` rule ("is the fact load-bearing?") is the same test as
+my own `argument`/`assertion` rule ("delete the conclusion, is a reason
+left?"), and I'll have applied it about 200 times by then. If I can't clear
+the normal range on a boundary I designed my whole taxonomy around, that tells
+me my 200 labels are less consistent than I think.
 
 ---
 
