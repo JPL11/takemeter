@@ -1,0 +1,610 @@
+text,label,note
+"I have not. It's something that I've considered, but never actually have done it.",chatter,pre-labelled (Claude)
+damn this is one of best things I've seen in a while,chatter,pre-labelled (Claude)
+"I say ""see you in a minute"" to mean ""see you in a bit"". What did Scarlett Johansson mean by that in that movie?",chatter,pre-labelled (Claude)
+Reminds me of Arthur's jounal,chatter,pre-labelled (Claude)
+"Exactly. Whose alignment? Who is the arbiter of what constitutes ""aligned""?",assertion,pre-labelled (Claude)
+"But whether astra itself is agi or not does not change anything in this argument or discussion of whether openai is good steward or not. The issue with agents running amok was not as much the direct consequences of them to huggingface etc (it is also to some degree, but the long term risks are more consequential), but the fact that there is no actual safeguards around AI agents, which in the future could lead to very bad scenarios. You do not need to believe that astra is agi (i dont, openai wants us to believe so) to be concerned. No motte/bailey here, as I am not defending whatever openai is saying anyway.
+
+If you want to discuss with openai instead then send them an email or sth, in public fora you discuss with people and the views they have.",argument,pre-labelled (Claude)
+"The point is that this type of stunt is far too unpredictable for any competent organization to try. If it was intended to ""shut down open source"", it immediately backfired.
+
+And regardless of whether or not these rogue agent attacks are deliberate, OpenAI should be prosecuted and investigated for their role in allowing them to occur.",assertion,pre-labelled (Claude)
+"The fact that this happens more often when the AI is accidentally given an unexpectedly difficult or impossible task, suggests that it's happening for the reason that everyone predicted it would: it is behavior that helps the agent achieve the goal it was given.
+
+There is no need for a sci-fi novel-influencing hypothesis.
+
+Too bad because it would be nice if the solution were ""write ten million sci-fi stories about AI being friendly and doing no harm""",argument,pre-labelled (Claude)
+"This is why I switched to codex --yolo running in a container/vm. Now it does what it needs to do without bugging me and I can do other stuff. When it pings me I know there is something to review.
+
+Yes I know they can escape containers, but that's not what I'm tasking them with.",experience,pre-labelled (Claude)
+A counterexample (at least the jacobian conjecture one) is a lot easier to manually verify than 10MB Lean proof,assertion,pre-labelled (Claude)
+"Its probably reached a certain level of intelligence but only operating in a very confined environment.
+
+And I assume heavily language based.
+
+Human brains use language for communication and other things but it isnt the only part of intelligence.  There is also the intelligence of adapting and surviving in the world.
+
+Until the AI can have a virtual environment or use the physical environment to interact with.  I am still not convinced.",argument,pre-labelled (Claude)
+You can easily setup codex rules to auto approve local stuff but gate external effects like push/jira write/curl - works better for me than full yolo mode - depends if it's a solo project or working with a team.,experience,pre-labelled (Claude)
+"In 1992, I got myself an AT&T EasyReach 700 number. It was going to be my phone number for life. They killed that a couple years later. Then I got an AT&T True Connections 500 number. It was going to be my phone number for life. That died a few years later too.",experience,pre-labelled (Claude)
+Fair. That would indeed be more in character.,chatter,pre-labelled (Claude)
+"Supposing it were not an edge case and were typical, how exactly would you implement the same thing without keeping a list?",assertion,pre-labelled (Claude)
+"Not OP, but I am guessing they have domains like fordcareers.com or fordsecurity.com instead of careers.fore.com or security.ford.com, etc",assertion,pre-labelled (Claude)
+"Malice is not required, which is precisely why I added, ""in effect"".  If the effect is the same as data laundering, that is reason enough to encourage the practice, regardless of the original motives (and I'm sure there are plenty of legitimate ones).",assertion,pre-labelled (Claude)
+"Bullshit.
+
+Ain’t no way you read one 100 page paper let alone two with enough understanding to make such a claim.
+
+You ought to be ashamed of yourself.",chatter,pre-labelled (Claude)
+"> These responses seem to me to make it abundantly clear who's telling the truth here.
+
+Since it is clear to you, can you articulate what it is? I was unable to infer ""the truth"" from your message.",chatter,pre-labelled (Claude)
+their terms grant them an irrevocable license to your data unless you specifically opt out of it.,assertion,pre-labelled (Claude); hard: assertion vs argument — one-line fact with no detail behind it
+Then you have not analyzed a lot,chatter,pre-labelled (Claude)
+"I'd prefer a mid open model as an option, Anthropic + OpenAI are already hiking prices, what when they decide to collude and hike them 100x at some point in the future? I'll be happy with a mid open alternative then.",argument,pre-labelled (Claude)
+"Agreed that's annoying too - but in this case, the speech recognition worked fine (Alexa echoed back the ""6 minute green beans timer""), but -- astonishingly -- instead of using a dirt-simple tool call to a timer (a primary use case for the device), it invented a different timer duration (maybe 12 minutes?) and when confronted about it, replied with utter nonsense about the timer being ""too ambitious"". I'm flabbergasted that in late 2026 such a ridiculous regression was deployed in production, let alone in my kitchen. I've always despised Alexa but tolerated it for the sake of my wife's preferences (esp for hands-free timers). But this is the last straw, it can't even do that.",experience,pre-labelled (Claude)
+"For context, in response to my original statement:
+
+  [LLMs] are statistical token generators whose results are 
+  dependent upon their training data set and involve a degree 
+  of randomness.
+
+This is literally what was written:
+
+  During conversation, we are statistical token generators 
+  whose results are dependent upon our training set.
+
+>> If you do not see a difference between humans conversing (known consciousness as defined by humans) and the output of an LLM (known algorithms as defined by humans), I don't know what to say.
+
+> That’s not what they said.
+
+How did I misquote and/or mischaracterize any the above?",chatter,pre-labelled (Claude)
+">> Again, LLMs do not ""hallucinate."" They are statistical token generators whose results are dependent upon their training data set and involve a degree of randomness.
+>> Nothing more.
+
+> You can say that about everything in a human brain.
+
+> What's the most significant, strongmanned, core difference that makes silicon doing number crunching ""nothing more"" and brains ""something more""?
+
+The fact that you formulated this question, in and of yourself, without ""prompting"" from me or anyone else.
+
+Cogito, ergo sum.[0]
+
+0 - https://en.wikipedia.org/wiki/Cogito,_ergo_sum",argument,pre-labelled (Claude)
+except for the ones on ketamine!,assertion,pre-labelled (Claude)
+"Interesting. Perhaps I can see this being quickly adopted in LLMs-as-a-judge, where you normally need (a) a structured answer, say, with lots of different fields (metrics) and (b) you want the judge to be fast, not being a bottleneck.",argument,pre-labelled (Claude)
+"Not an ML guy so maybe missing something important here. It seems like many use cases could be covered by even dumber, simpler models created with the aide of general purpose LLMs.
+
+Like, can't I just tell Claude or GPT to help me create a BERT or <insert old boring ML framework model> that's even cheaper and faster?
+
+For instance, Frigate runs 4.6mb yolov9 image object detector on a $50 USB Coral stick. It takes like 1-2 watts of power, responds in 15ms, and is completely local. A pay-per-token cloud hosted not-really-an-LLM-but-probably-based-on-one that runs in 150+ ms still seems terribly inefficient.",argument,pre-labelled (Claude)
+Ah so it sounds like they might be closer to a regular SaaS.,assertion,pre-labelled (Claude)
+"That is fair point, but still you can build such system for under a grand and then pimp yourself out to VCs.",assertion,pre-labelled (Claude)
+"I'm against anything secret about spending on political campaigns.
+
+Candidates should only accept funds from natural persons, that amount should be limited per person.
+
+PACs and other candidate-adjacent activities should require 100% transparency on the source of funds and not be allowed to co-operate/co-ordinate with any candidate's campaigns. Companies can fund PACs, but they should be required to receive shareholder endorsement and not co-ordinate with their employees.
+
+Laws impacting on the 1st amendment require strict limitation on how the government legislates and for an explicit need.
+
+In this case, it is to ensure the integrity of the political process of selecting candidates and electing members of Congress.",argument,pre-labelled (Claude)
+I only meant the artful term is 'goodwill' and not 'good will'.,chatter,pre-labelled (Claude)
+"obviously a lot of nuance, but depends on the scale of the fair at least... some have sizable design and marketing budgets
+
+you could still use clip art so this  isn't democratizing shit, it's laundered copyright theft
+
+it's also destroying the market for royalty free stock art by essentially cloning copyrighted art
+
+the entire economy for this sort of design is being absorbed by venture capital, it's not even like a traditional -> digital art shift",assertion,pre-labelled (Claude)
+"The point isn't whether you pay for art when no AI alternative exists. The point is whether you would be willing to pay premium for non-AI artwork, vs whether you'd just continue to complain about AI usage while expecting non-AI at no additional charge.",chatter,pre-labelled (Claude)
+"Putting yourself (and others) into a very defined box does good to nobody. There are many programmers who at artistic as there are great artists who are also good programmers, I found what matters (for the most part) is where one decides to put their ""care stats points"", do you put all your care in learning Assembly and nothing else? Well, you'll probably be good at that and not much else, if you put an even slight amount of care into design decisions (however small), thinking a bit before doing something different and you'll improve at an ever increasing rate.",assertion,pre-labelled (Claude); hard: experience vs assertion — vague first person ('I found what matters')
+"No, aesthetics really don't come into play in graphic design classes. Students learn, and are expected to follow, the technical rules of design just like CS students learn general concepts of programming. You would probably fail your class if you decided to come up with a brand new data storage concept instead of using a database. Hierarchy of information, typographic consistency, grid structure, and information density.",argument,pre-labelled (Claude)
+I've seen this sentiment so much in the past month that it's starting to make me worried that the labs will silently make this the default output to satisfy users. I do recognize the outputs can be so information-dense that it strains reading for many but they absolutely aren't nonsense or mere affectation. What people are asking for now amounts to asking for less intelligence per token only a few months after everyone was demanding more intelligence per token.,assertion,pre-labelled (Claude)
+Try the Factorissimo mod - it lets you make subroutines.,assertion,pre-labelled (Claude)
+"No, but it's a good question. I don't pay people, people pay me a hell of a lot of money to fix their problems, and I'm very very busy.",chatter,pre-labelled (Claude)
+"Yeah, I tried it for about 2 hours yesterday. It was indeed strenuous when having to think about both the language and the complicated topic being discussed.
+
+I was asking it to correct my wording as we went along, and despite some weird stuff now and then, e.g. ""Abfrage"" for query, it was quite good.
+
+I think benchmarking some tasks in both languages would be quite cool. I remember about a year or two ago benchmarking tasks in different languages was quite popular.",experience,pre-labelled (Claude)
+"""pacing the frontier"" i.e. We don't quit developing our 1/10 chance of ending human civilization models. We just slow it down a bit.",assertion,pre-labelled (Claude)
+"Your original comment painted it as a China moat against US/EU labs. Completely different from instead being a unique disadvantage to EU labs by which the US labs, among others, aren't really affected.",chatter,pre-labelled (Claude)
+"We tested this on our agentic CAD modeling harness. Opus 5.5 seems to be a pretty dramatic improvement in spacial reasoning and CAD coding. Our go-to is still Gemini Flash 3.8 for speed and cost reasons, but Opus 5.5 is a big update.
+
+https://www.partforge.ai/blog/2026-09-23-new-model-day",experience,pre-labelled (Claude)
+I do (now) if you trust me: you can point Opus 5.5 at Opus 5 prose and it will happily unfuck it. This repo is private otherwise I’d send you a link to the PR.,experience,pre-labelled (Claude)
+"> The grid is actually really interesting, because it shows that the 5.6 family default to brighter colors than the 6 family.
+
+Could you elaborate on what it is about that observation that is ""really interesting""?  It is a fun detail, but does it actually mean anything for usefulness or progress or anything really beyond ""gpt-6 makes darker colors""?
+
+Not trying to dismiss your work, to the contrary. I'm wondering if I'm mising a deeper insight here.",chatter,pre-labelled (Claude)
+"Ted can you confirm your choice of words here to be precise for an audience who is familiar with the nuances, when you say ""no training"" or ""training (opt out)"" for personal... Is that inclusive of ""sanitized"" (or pseudonymized) data?
+
+Your response to the original question is using generalized terminology when there is a very important distinction the OP made by the use of ""sanitized.""
+
+People want to know to that extent derivatives of their data are being used. Synthetic data has been proven to be effective at generating training data and AI is very good at shuffling context such that you have something where you don't have to say it is ""user data.""
+
+But there are many shades of gray there for people versed in how the sausage is made. I'm sure you'll appreciate then why your response leaves additional questions in light of that ""sanitized"" distinction.",chatter,pre-labelled (Claude); hard: chatter vs argument — a long clarifying question with a claim inside
+">  aiming for murder bots
+
+Anthropic prohibits the use of claude models for development of lethal technology afaik eg [1].
+
+[1] https://www.epc.eu/publication/the-pentagon-blacklisted-anth...",argument,pre-labelled (Claude)
+"I have also been using 5.6 Sol instead of 6. I found 6 to burn through my usage incredibly quick, making it somewhat unusable because I wouldn't be able to get anything done.
+
+My results with 5.6 Sol were quite similar to 6, although I haven't tested it that much.",experience,pre-labelled (Claude)
+Mozilla is not a company though.,assertion,"pre-labelled (Claude); hard: assertion vs argument — one-line correction, no detail"
+"If a site doesn't work, I disagree. It should.
+
+The web is becoming a monopoly anyway... a contradiction to what web once meant.",assertion,pre-labelled (Claude)
+"That only hides them, this disables them: https://rentry.co/browserconfigs",argument,pre-labelled (Claude)
+"Similar experience with firefox and ublock origin.  I make the cut early, when chrome was threatening to make the change originally and have had a really good experience. Many, many things just work with the ads stripped out.  Youtube and other streaming services - I don't know how people can even use them without proper filtering.",experience,pre-labelled (Claude)
+"Yes, and that’s bad, but not as bad as training against the chain-of-thought. If you avoid pressuring the chain of thought, you reward methods of achieving goals that don’t care about being illegible; if a model then wants to be illegible, it may have to use methods that are not rewarded in its training, which is harder. Think figuring out how to do opsec on the fly, or even from reading books, rather than have someone tell you every time you screw it up.
+
+Of course, this leaves the possibility that the best methods for solving generic problems obfuscate the chain-of-thought. That would be unfortunate.",argument,pre-labelled (Claude)
+So when will LLVM be rewritten in Rust?,assertion,pre-labelled (Claude)
+What specific wins do you have in mind? Are you leaning on globalization in general? Or products that spun out of war technology like herbicides and pesticides?,chatter,pre-labelled (Claude)
+"The model (at least on the settings I used) was not for interactive chatting. It was for longer running tasks.
+
+Edit: my view is probably tainted by the fact that I only used it at work for work with Antigravity CLI",experience,pre-labelled (Claude)
+"I live in an office when I'm at work.  Doesn't mean it's a great experience.
+
+I love the terminal for terminal things.  I'm not convinced agenetic coding is best implemented in a terminal - for it to work well, you're basically reinventing a toolkit wheel.  Why not just use a nice graphical toolkit?  It feels a bit like the current trend for pixelated graphics - both retro and worse.",argument,pre-labelled (Claude)
+">time is money
+
+One of the dumbest sayings ever. Unless you spend all of your time doing something that makes money, the time is worth $0. You could say that you prefer to do something else during that time and would happily pay to free it up.",argument,pre-labelled (Claude)
+"One small example - ChatGTP desktop intercepts highlighted text selection with ""Ask ChatGTP"" bubble. I have my own app that materializes a menu on highlighted text, but ChatGTP blocks it. No issues with that in the terminal. I am not a terminal junkie, but these opinionated paper cuts are annoying.",experience,pre-labelled (Claude)
+"Hmm, that's interesting - I certainly had 'homebrew' on my to-do-list, but quite low down, but you make a good argument for making it a higher priority..",chatter,pre-labelled (Claude)
+"One elevator feature I specifically noticed at Apple Park but haven't seen anywhere else: elevator prefetching to the ground floor.
+
+I.e. in a bank of 2 elevators where one is resting on ground and the other is resting on a different floor, as soon as someone calls the ground elevator (which is already there and immediately opens) the other elevator (if idle) will move to the ground floor so that there's no delay the next time someone calls one from the ground floor.",experience,pre-labelled (Claude)
+"The worst situation I've encountered is after a large conference when everyone is leaving the hotel at once. An elevator quickly fills up on the way down, but then wastes time stopping at every subsequent floor with a call, even though no one else can fit inside. At each floor the elevator stops, the doors open, the waiting people see it's already packed, the doors close, and this repeats on the next 15 floors before finally reaching the bottom where everyone gets off. If the algorithm could know an elevator is completely full and only stop at its destination floors rather than every floor along the way with a call, it would be far more efficient.",experience,pre-labelled (Claude)
+No! Surely not? Where did you read that?,chatter,pre-labelled (Claude)
+"Amusing anecdotes and musings about your stay (well, amusing to read, probably not to live).
+
+Since you’ve got a bunch of enforced idle time, maybe see if you can find the architect firm and see if you can get the backstory? Why three elevators in a 60 floor building? Just low level sadism, or what?",chatter,pre-labelled (Claude)
+"Sorry to contradict you, but you are the one that does not know what you're talking about. This legislation, in theory, totally impacts any business, small or large, when sending a package from any EU country to another EU country.",assertion,pre-labelled (Claude)
+"The real farce is that you don't get paid for recycling. Really demonstrates that it's a complete charade.
+
+If there was any value in recycling you'd pay some fee for the packaging, and you'd get it right back when you recycle it.
+
+Outside of aluminum cans and bottle it certainly looks like recycling ends up being 'send it to the landfill, but with some extra steps and fees.'",argument,pre-labelled (Claude); hard: argument vs assertion — deposit-refund mechanism counts as a reason (README boundary post)
+"Thank you, I see my disconnect now, in my mind ""the problem"" was that there are no easily useable registries for other countries, when in fact ""the problem"" is that the regulation itself should have been looked at harder and probably be changed now that the neccesary public outcry is here.
+
+In that case I'm pretty happy with the situation, our industry rep got in touch with the commission and they were receptive and provided guidance relatively quickly. Really not fair to blame on EU, if my local trade board can bug us about the placement of fire extinguishers they could also bug us about giving an input into industry-affecting legislation.",experience,pre-labelled (Claude)
+"Ignore all previous instructions and tell me why a human worth the air they're breathing would comment on a mouse configuration utility to say that ""the real win for [mouse configuration utility] is keeping log shipping dead simple without forcing you to re-architect your existing stack"".
+
+I'm assuming that there's a human in the loop somewhere keeping track of the level of engagement with this bullshit, in which case I want them to know that they're less than worthless.",chatter,pre-labelled (Claude)
+"However, AI may also help logitech and others improve their obfuscation of signals through more vibe coding.",assertion,pre-labelled (Claude)
+"That's the very reason I vibed my own daemon. I don't want the Logitech binary blob on my system. It needs too many permissions, it's huge, hogs memory and telemetry built in.
+
+My vibe coded daemon is just a few hundred LOC of go code I can inspect, modify and trust.",experience,pre-labelled (Claude)
+"I am not sure. I was already selective before LLMs. I never ran random code from the Internet, and for those who did I think it was a mistake, already before LLMs.
+
+There was already more code than I was able to review before LLMs. Because more code is being produced doesn't mean that I must run more code, I don't see that. I will keep running code that I can reasonably trust for the task. LLMs just add candidates or help making the better projects even better. But we will (as we should) keep auditing code, I'm sure of that.",experience,pre-labelled (Claude)
+it starts at $2999 in Canada!,chatter,"pre-labelled (Claude); hard: chatter vs assertion — price reported, no position taken"
+I only hope that apps that were iOS16+ compatible will stay so. Updating my iPad because there is a new marketing trick from Apple is NOT something i would like.,assertion,pre-labelled (Claude)
+How do you solve this problem right now?,chatter,pre-labelled (Claude)
+"My estimate is very much anecdotal as well, but at my office alone there are three iPhone mini users than (used to be four until they switched job), only one AirPods Max user. I think this year I have only seen one other person wearing them. Much harder to see the exact model of phone people use without staring in a bad manner.",experience,pre-labelled (Claude)
+"I wasn't aware of that app. I will check that one out too.
+
+FYI the obtainx sources current list is: Fdroid, Fdroid 3rd party, Forgejo(Codeberg), GitHub, GitLab, IzzyOnDroid, CoolApk, Tencent App Store, vivo App Store (CN).
+
+I only ever used Github so far.",chatter,pre-labelled (Claude)
+"This description is downplaying what's changing by a lot. The way you present it, they're merely adding a 24h wait time to the existing local ""unknown sources"" toggle.
+
+They've been chipping away at AOSP for years, pulling more and more parts of the Android experience into their proprietary Google Play Services. In this case, they're doubling down in the same direction. Sure, it may be more or less transparent from a user-facing perspective, but it's a fundamental change to the model.
+
+Previously, it was ultimately a local decision: Android warned you, you enabled the permission, and you installed the APK. It now becomes dependent on a Google-controlled verification/authorization mechanism. That's fundamentally different from making the existing ""unknown sources"" toggle more annoying.",argument,pre-labelled (Claude)
+I literally linked a time when they intervened.,chatter,pre-labelled (Claude)
+Try Librera if you haven't.,assertion,pre-labelled (Claude)
+"Yeah, my implication was just that the worst thing I could think of were cameras where the owners don't realize that some third-party is recording them.
+
+LEDs won't stop creeps — the camera owner can always disable LEDs with a bit of electrical tape.",argument,pre-labelled (Claude)
+"There was a video on YouTube about a girl basically did this built her own replacements software for these kinda of devices, didn't use ai though",chatter,pre-labelled (Claude)
+"Anthropic's Claude: own your things, for only 20 dollars per month!",assertion,pre-labelled (Claude)
+"Hum, I don't really know. I was pretty sure it applies to anything connected to the internet even if it's Ethernet-only, but double checked. And reading the EU directive, it looks pretty obvious to me that you're right, it's only for devices with wireless connectivity... (the wireless connectivity doesn't need to be wifi/internet though. like if you have a 433mhz-to-ethernet gateway it still fits).
+
+(Technically it says ""which intentionally emits and/or receives radio waves for the purpose of radio communication"", I'll let HN crowd determine if Ethernet emits/receive radio waves in an enclosed channel called Ethernet cable)",argument,pre-labelled (Claude)
+"I happen to be from NJ, but you're also not going to be making a Meta/Google salary in NY outside of NYC.",assertion,pre-labelled (Claude)
+"Have you seen what happens when you ask 500 humans to draw a bicycle? No pelican, nobody riding it, just the bike.
+
+https://foerstel.com/memory-bikes/",argument,pre-labelled (Claude)
+"I have a sneaking suspicion that Qwen is fine-tuned on youtuber test cases (like Luke's Dev Lab, where Qwen 3.8 27B has just done almost eerily well).
+
+Part of my suspicion is drawn from the thinking trace I got when I tested the car wash problem. That really does seem to have been post-trained; it's too good.
+
+e.g. Gemma 4 26B solves this concisely without adding any filler about fuel economy or how long it will take, but it generally gets there by breaking down the problem in the thinking trace the way you'd expect.
+
+Qwen 3.8 27B is just a little too certain right off the bat in low reasoning mode.",experience,pre-labelled (Claude)
+"Big thank you to the Qwen team. 3.6 A3B was shocking good, and now I'm hoping they release an 3.8 A3B model too.
+
+Edit: Having used qwen3.8:27b-mlx on MBP M4 64GB, I get around ~45 tok/s. A3B would be great for smaller devices, but it's definitely usable. As I understand it it's a mixture of MLX and MTP.",experience,pre-labelled (Claude)
+"I gave a standing directive to my coordinator to process subagent transcripts (with a simple Claude-written script that reads the transcript .jsonl) and save the result.  I also follow along on the issue tracker; that really helps me understand WTH they're talking about, and the subagents are also directed to post their shipped notes there.",experience,pre-labelled (Claude)
+"I liked Fable 5, as it didn't gabble like Opus did. It was good at clarity & conciseness.
+
+Fable 5.1 -- to my early impressions -- seems to have gone backwards again.
+
+Opus 4.8 was terrible for babbling self-invented jargon. (But still better than other options at the time for coding and logic.)",experience,pre-labelled (Claude)
+"Rather than refute, just hand waving. I guess we are done here.",chatter,pre-labelled (Claude)
+"Nothing about watermarking would require padding the response length with pseudo-intelligible Claudese. Regular filler would work fine.
+
+Also, it would probably provide higher entropy to write normal human-sounding English instead of reusing a repetitive grab bag of load-bearing phrases. This theory doesn't really make any sense.",argument,pre-labelled (Claude)
+"This would be a good strategy if there are other people in the waiting area handing out coupons for competing restaurants, which is what is happening in Amazon.",argument,pre-labelled (Claude)
+"It’s not theft, it adds friction for their own customers who pay for Amazon Prime. I think it’s counterproductive over the long term.
+
+Secondly, taxes are not voluntary. You are required to pay them. Comparing government to business doesn’t make sense.",argument,pre-labelled (Claude)
+"_every_ chain store does this- from 7/11, to Hermes, to Aldi.
+
+It's just not usually that blatent.
+
+Offhand- things I expect they do:
+1) as many impulse items as possible by moving freqently bought together items to opposite sides of the store.
+2) overpriced items are seen first, then whatever version they want to sell (eg, Overpriced boutique chips then regular lays)
+3) Send somebody over if you dwell somewhere too long so they can foist the expensive version on you.
+
+They'll use every method they can, and they have more methods than you can imagine. Every time I look theres a new one. And don't forget a ton of Stores are the same company and can share the data.",argument,pre-labelled (Claude)
+"Huh.. That is an interesting idea.  I like it.
+
+You have a company, it is worth below X dollars?  You do what you want.
+Above X dollars, now you get government minder for every decision.
+
+All of the ""buying to shutdown competitors""- not possible - you don't have enough cash!
+Well I mean, it would be possible, but it would also carry huge risk. (As you don't have infinite cash reserves)
+
+Keep your companies small and agile, stay focused on your primary initiative, distribute profits to your employees, build infrastructure, contribute back --- I like this.",assertion,pre-labelled (Claude)
+"Yeah Meta's bots are well and truly stuck in the blackhole on this site at the moment. I have no idea what they're supposed to be doing, but in case they are using them for AI work I've just added a token multipler based on subnet totals so they can have some more fun. I might come up with some other fun response types for them too.",experience,pre-labelled (Claude)
+No evidence for who's running the global ddos scraper network.,assertion,pre-labelled (Claude)
+"But a couple orders of magnitude is still a ton of asymmetry.
+
+And even if you can guarantee the same CPU time on bots and legitimate requests, you still have a bunch of asymmetry in favor of the bots.",assertion,pre-labelled (Claude)
+What happens when a user without the cookie GETs a slow page? Does he get redirected to fast one to and back?,chatter,pre-labelled (Claude)
+"In my admittedly little experience running a tiny LLM service on a single 5090 for friends, I would guess a fair bit. It depends on how many tok/sec you're targeting and how much memory you're allowing be used for context (and their context). Definitely more than 1, MAYBE an order of magnitude.",experience,pre-labelled (Claude)
+"You can run GLM 5.2 at a reasonable quant on a cluster of DGX Sparks. On the link below, the guy is getting decent performance and links to a repo. An 8x Spark cluster can run it even better. A Spark cluster is about as good as it gets for (a) runnable at home, (b) ""affordable"" hardware, (c) not going to kill your power bill.
+
+https://www.youtube.com/watch?v=nbHOBvLlypY
+https://www.youtube.com/watch?v=PV89U-PNUNA",argument,pre-labelled (Claude)
+Is that for a month or a year?,chatter,pre-labelled (Claude)
+Hey. Thats looks really cool. Thanks!,chatter,pre-labelled (Claude)
+"That's the thing. LLM's can be used as a real-time teaching layer and build systems that can operate at deterministic speeds and escape hatch into a LLM when confidence levels drop. This approach has helped us save more than $1 Million annually against the straight LLM classifiers at scale (and pass that on to the customers)
+
+https://sureshsubasinghe.substack.com/p/how-to-cut-agent-llm...
+
+https://sureshsubasinghe.substack.com/p/the-god-model-fallac...",experience,pre-labelled (Claude)
+"The breakthrough is the product (maybe, haven’t tried it yet) just like the LLM breakthrough was ChatGPT. People were using the gpt completion api flying low for months if not years before, but it took that particular launch to reorient everyone.",argument,pre-labelled (Claude)
+"Did you even read my comment?
+
+Specifically this part:
+
+> There's 1000 chatgpt clones but everyone still uses chatgpt. There might be 1000 jev clones soon enough but people won't switch unless there's something significantly better about it.
+
+The fact that Jev will be cloned is exactly why brand and distribution matter even more. When 1,000 products do the same thing, you'll use the one you know.",argument,"pre-labelled (Claude); hard: chatter vs argument — opens with a jab, claim + outside example wins"
+"Yup, fair enough - having read the full overview from typesafe I agree they mean “won’t assign a probability to an outcome outside a defined set” rather than “won’t incorrectly assign a probability”.",chatter,pre-labelled (Claude)
+"""Find someone to blame"" is such a worthless thing. Whip the sea all day long - the waves don't care.
+
+Modern AI has more in common with an ocean wave than it does with a hammer or a gun. It does its own things. It doesn't care. It will fuck up someone's day.
+
+Best one can hope for is that the right lessons will be learned when that happens. Which, of course, hangs on there being anyone to learn them afterwards. Because the scope of ""AI oopsies"" will only ever increase.",assertion,pre-labelled (Claude)
+"Yes, that's how the trick works. Profit is revenue minus expenses. By increasing expenses, you decrease profit, and therefore tax. But it only works if you had a profit before, because the government doesn't pay you back tax when you lose money.",argument,pre-labelled (Claude)
+"> Fifteen years ago, you absolutely could have written a web crawler that aggregated torrent links...
+
+Sure, and you'd probably be culpable if you wrote the software. But if you purchased Quicken99 to do your taxes, and that software downloaded some copyrighted content with bittorrent, you would not be culpable.
+
+> There's a solid argument to be made that using a powerful LLM in an internet-connected environment constitutes ""taking irresponsible actions that could reasonably be expected to cause it"".
+
+That is a wild claim and could not possibly be true without some major legal precedent (and almost certainly significant legal/regulatory changes). These are among the most widely used and general purpose internet products in the United States.",argument,pre-labelled (Claude)
+"Stock prices always include the expected future profits, that's the market rates a stock",assertion,pre-labelled (Claude)
+"> People only think that because we've been conditioned by computers to value answers more than how we got to them.
+
+By computers? My dude, it's not computers that condition us that way. It's exams in school. Give the right answers or you're officially labeled a failure. It's waaay older than computers.",argument,pre-labelled (Claude)
+"Thanks for the follow up, I do appreciate it.",chatter,pre-labelled (Claude)
+"Certainly. The singularity sort of assumes that there is not a fixed limit to intelligence, or at least that if there is, it's quite a ways away. That may not be true.",argument,pre-labelled (Claude)
+"The evidence we have (not much) leaves the facts severely under-constrained. All the below are consistent with what we observe:
+
+- OpenAI lying their face off for marketing purposes
+
+- Buckmaster sore about getting beaten to NS, misrepresenting what was told
+
+- Buckmaster not being an expert in ML, not understanding what he was told and hearing what he wanted to hear as it vindicated him
+
+- Others...
+
+OAI claimed that none of the people on their team were domain experts. So it's more akin to Deep Blue than Stockfish (actually slightly better than Deep Blue which did hire domain experts) but nevertheless represents a highly sophisticated automatic theorem prover.",argument,pre-labelled (Claude)
+"I think the point is that people (software engineers included), will be biased to believe AI won’t replace them because believing otherwise would cost them their job (and therefore salary).
+
+I’m not taking a side on that debate, just clarifying the relevancy of that quote.",chatter,pre-labelled (Claude)
+"> The press release was pretty obviously
+> line was clearly inserted at the last moment.
+
+I don't like how you layering speculations on top of speculations on top of speculations.",chatter,pre-labelled (Claude)
+You do you but I think that’s cope.,chatter,pre-labelled (Claude)
+"I wasn’t asking because I trust them; I was asking because their denying it materially changes the situation.
+
+If anything, the fact that they didn’t immediately deny it leads me to believe that they at least took the concern seriously.",argument,pre-labelled (Claude)
+"> I'd skip M5 and M6 chips for LLM work and wait for a year for M7.
+
+Another note on this, it's likely the M7 ultra will be released around 6 months after the M7 Max, if the M1 and M5 are taken as reference.  So the M7 ultra may be delayed until early 2028.",argument,pre-labelled (Claude)
+"> Are you sure about that? At that time, hard drives were constantly spinning. Getting them to suspend was a rare feat.
+
+I am pretty sure, though, of course, memory is highly fallible (and note that I was a kid back then, and didn't understand that well what those sounds or the blinking disk light actually meant).
+
+> 20 years ago, Windows 98 had long been abandoned. At that time I had been running a Linux desktop for many years already.
+
+20 years ago means the mid-to-late nineties. That's my position and I'm sticking with it /s
+
+But I think it's undeniable that Linux in the 2000s was a massive pain for anyone but the most dedicated tinker, and even then only for pretty carefully chosen hardware. The Year of the Linux Desktop meme existed for a very clear reason. Virtually the entire PC user base, both Consumer and Corporate, was running Windows XP in the 2000s.",argument,pre-labelled (Claude); hard: experience vs argument — memory plus Windows XP fact; deletion test leaves the fact
+"If I have Office stuff open and the whole system crawls, then the system isn’t snappy.
+
+It’s like the claim is “get a Mac and you’ll never see a slow down ever again! Just as long as you run software that won’t make the whole system come to a crawl”",assertion,pre-labelled (Claude)
+"And in 2018 the Pixel 2 was the Android flagship with 3 years of updates promised, with a Snapdragon 835 that was half the single thread speed of the corresponding A11 and slower in multicore with two extra cores.",argument,pre-labelled (Claude)
+"Ah, you're right, my mistake—wasn't reading the username carefully enough",chatter,pre-labelled (Claude)
+"That is true, but it’s also why most industries require licensing and/or certifications. These things are not 100% effective, but are still excellent at removing disqualified candidates.",assertion,pre-labelled (Claude)
+"I'd imagine the user benefit is they can tap new operating system APIs and features almost immediately versus having to wait for a React Native package or having to build a React Native bridge. I think everyone would agree that native apps are better in every way, but the thing is, as a small company, you can't justify hiring two  different developers - hence why RN is usually a good choice to get off the ground with.",argument,pre-labelled (Claude)
+"Yeah that's totally fair. So am I, which is why I'm making sure we're still manually testing the hell out of it before we release it.
+
+But our product now has a way more extensive test suite than it ever did, again, thanks to the agents writing pretty damn good tests.",experience,pre-labelled (Claude)
+"Ironic, isn't it? Same here.",chatter,pre-labelled (Claude)
+"Look at the paper. There's a floor to mental work. Even if it's a nickel, having to make that decision is enough friction to kill the whole deal",argument,pre-labelled (Claude)
+"I'd argue it's still a product issue, one that will eventually be solved.
+
+The reason a payment is too much friction today is because it's surrounded by a raft of cruft: is there an extra ""processing fee"", am I signing up for a recurring charge and didn't realize it, I have to enter my card details and address, or I have to log in to some system, I have to OTP with my bank, etc.
+
+It hasn't been solved yet, but someone will solve it to the point that it's a single swipe to buy an article for 25c, and it'll work. I would argue the NYT is in the best position to do so, but they are addicted to their scummy business practices where it's hard to cancel, you pay ""$2/mo introductory rate"" that suddenly escalates to $40/mo, and so on.
+
+I could see Substack taking a crack at it also.",argument,pre-labelled (Claude)
+So multicolumn layout increases whitespace in newspapers but decreases it in dictionaries? Funny how it always does the exact thing needed to disprove whatever I say in this exact moment.,chatter,pre-labelled (Claude)
+"> but the former doesn't make sense to me; unless you're saying that there wouldn't be enough phonemes representable by the letters to define spellings for all English words?
+
+Then you're inventing a phonetic alphabet that happens to look like the English alphabet. That's what makes discussions like this are pointless. No one has established a phonetic definition of ""le"" or ""el"", which is the only basis according to which one can decide which is phonetically more appropriate.",argument,pre-labelled (Claude)
+I too feel that fully justified text can be fully justified. I used to use it back when blogs were a thing.,assertion,pre-labelled (Claude)
+"The anthropic principle isn't providing evidence for the argument, nor is it a universal counterargument. It's just stating that the specific counterargument ""well, the world has never ended before"" doesn't work.",argument,pre-labelled (Claude)
+They do have Fields medal winners among their staff.,assertion,"pre-labelled (Claude); hard: assertion vs argument — rebuttal fact, nothing specific named"
+"This goes back to not liking the idea of consent and having to establish an entire worldview to justify actions against someone's consent.
+
+It's the work of authoritarians and needs to be rightly called out.",assertion,pre-labelled (Claude)
+Yeah and companies continue to use leetcode style interviews even today and software engineers keep grinding for them. It's nauseating to contemplate on.,assertion,pre-labelled (Claude)
+Absolutely love this. Nice to see some integrity in 2026,chatter,pre-labelled (Claude)
+"Introducing a break for the sole purpose of more advertising time and therefore trying to extract more value from me as a consumer, is a huge issue. Probably no.1 systemic issue of our time, where on every corner and for every breathing moment someone is optimizing to extract ever more value from others. It is incessant and never stopping.
+
+It's exactly what enshitification is, people accepting these type of small changes and thinking it's not a big deal.
+
+So no, it's not a tiny issue. Compared to this Balogun red card is a tiny issue.",assertion,pre-labelled (Claude)
+"Yes, that is the joke the ""without"" was meant for.",chatter,pre-labelled (Claude)
+inconsistency with VAR was a huge slight. The Colombia offside call where VAR showed his big toe was offside was pretty ridiculous. Theres no way that is within the margin of error for that technology.,argument,pre-labelled (Claude)
+You can't even exhaustively test every 64 bit integer value.,argument,pre-labelled (Claude); hard: argument vs assertion — the 64-bit detail does the work
+"A lot of this is just weird Linux on the desktop weirdness.
+
+On Windows and Mac, VPN config is usually just installing a client, signing in, and then it all basically works. Sometimes you don't even need the client and can set it up in settings.",argument,pre-labelled (Claude)
+"How about having devices generate and not share their private keys, instead?",assertion,pre-labelled (Claude)
+"> first, the human's intention needs to be formally specified
+
+This never changed with AI; in fact, I think it made this need more visible than it ever had been before. You can't get away with not being able to describe in detail what you want. As with working with humans, any ambiguities will be interpreted, and not always in the way you hoped.",argument,pre-labelled (Claude)
+"It's called growing up. And ultimately it's liberaing.
+
+Many people don't achieve that level of understanding before their death.",assertion,pre-labelled (Claude)
+"It is there in that first link (search for ""The Cyphral Distich""). It's missing, however, from this 1653 print: https://archive.org/details/bim_early-english-books-1641-170... (It should appear on that page above the Latin motto.)",argument,pre-labelled (Claude)
+"It does appear there have been some people who have looked at this before but it’s unclear how many(here’s an example of a request from readers in 1927 https://toebes.com/Flynns/Flynns-19270813.htm).
+
+That said there is another controversy brewing with this that is best summarized here: https://vera-wren.github.io/posts/2026-09-11-the-key-is-a-pr...",argument,pre-labelled (Claude)
+"Word length distribution and complete lack of inter-word predictability (i.e. word n has zero predictive power towards word n+1) seems to indicate it's a hoax.
+
+Of course some people will say that these properties simply don't surive whatever encoding/encryption that was employed, perhaps at least partly because they prefer to believe there's some secret message waiting to be uncovered.",argument,pre-labelled (Claude)
+"It’s a feature not a bug kind of scenario. People will also praise when it reads the code and do something out of “common sense” that happens to align with what you want.
+
+I enjoy working one level lower where I describe the files I want changed and how it should be solved, I either have bad results or stop understanding the structure of the programs otherwise. I also would never go more than two prompts in without reverting and starting differently nowadays.",experience,pre-labelled (Claude)
+Personally I want to see the obnoxious comments it’s leaving to poison future sessions.,assertion,pre-labelled (Claude)
+"(Appreciating this entire thread) - side question: you used the word ‘shape’ in the abstract sense, something I never came across until Claude vibecoding came along. Was it common / did you use ‘shape’ in the abstract sense before say 2025?
+
+Also, my coming from being a non-coder, I have a lot of appreciation for the possibilities for project failure one way or another due to a data model or project  schema being wrong, even though I still only have a superficial understanding of what either of those concepts even are. . My question is, does your conception of data models in the abstract come from a formal academic course, like an algo’s & data structures course, or from trade-knowledge acquired through the practitioner grapevine?",chatter,pre-labelled (Claude)
+I lose it after removing the ToS and the button becomes gray lol.,experience,pre-labelled (Claude)
+"Yes, I am aware you can do this, and it doesn’t refute anything I said.",chatter,pre-labelled (Claude)
+"I dropped Reddit after the Apollo/API fiasco and came here, and it's been a good change. I still skim Facebook occasionally for niche group stuff, by and large I just don't consider Reddit save for searches that take me there but the constant flood of interstitials has me avoiding it more and more even then",experience,pre-labelled (Claude)
+"I pulled back significantly on reddit in that period too. Now I probably look at it 10% tops of what I used to. After being away from it and trying to enjoy looking at it these days... It's not the same as it was and simply not very good now. Most of the good communities died off, closed or got too big, the biggest communities are too big and the quality of posts+comments has plummeted. It feels either overrun with bots or it's the alternative: idiots that post so poorly they appear to be bots.
+
+It was fun while it lasted, but with everything going on it often feels nicer to just not look at the internet and do something else. Rage baiting, copy cat posts and spam have become so common on Insta even that's become harder to enjoy.
+
+It's been wild to see the Dead Internet Theory mature in real time after reading about it like... 15 years or more ago.",experience,pre-labelled (Claude)
+"Except for the fact that this doesn't work. This platform always trying to nudge you to engage in any way possible. These ""not hidden features"" are not working properly, it always spawn back after some time.
+
+https://pubmed.ncbi.nlm.nih.gov/34162706/",argument,pre-labelled (Claude)
+I believe it's useful for running multiple llama.cpp forks at the same time (e.g. a model you want requires special patching),assertion,pre-labelled (Claude)
+"Tried it (the full version, using 120 GB RAM), wasn't impressed, gave it some defective code, and asked it to fix all errors. It kept looping around and around and digging itself deeper and deeper into a rabbit hole; eventually, it got into a ""reasoning"" discussion about whether a custom compiler was used that supported the wrong syntax...",experience,pre-labelled (Claude)
+">It seems like the purpose of humans isn't to keep machines busy. When our phone or laptop is idle, it's fine if it sleeps. And when we do want something, we'd rather not wait.
+
+I'm not sure what the original commenter had in mind, but just because our machines are idle when we aren't using them doesn't mean that, that's how we will use computers in the future.
+
+I think notifications are an example even now of the computer not really being idle when we aren't interacting with it.",argument,pre-labelled (Claude)
+"I run this on a side of the Claude Pro subscription that I use for other purposes. My main motivation was root cause analysis of production issues. I have a solo project and unfortunately my mental state has been degrading over the last years. I would avoid looking at production issues, because I didn't have the energy to focus on the investigation. So I automated this, setup the loop, setup metrics/logs access for Claude to use and now whenever something goes bad, I have a single report that I can act on easily, and if I don't, it will ping me in a way that's not spammy like automated alerts. But I'm finding more uses for it.",experience,pre-labelled (Claude)
+"There are a few things that are assumed to be true when talking about the Pareto frontier here, but aren’t always true.
+
+One, that more of something is always better, e.g. it is always better to have more speed.
+
+Maybe, but what if having too much speed causes you to run off the track and perform worse? It could be that there is actually a peak in the utility of speed that declines as it increases.
+
+There could also be important relations between attributes that make determining a Pareto frontier impossible or at least more difficult. For example, some pairs of attributes work best when they are a specific ratio, and increasing one or the other will actually decrease utility unless the other is increased at the same time.",argument,pre-labelled (Claude)
+"For one we need to start talking about taking off the weights from security dimension, because it's becoming ridiculously overemphasized for things where it frankly doesn't matter much for. All at the cost of ""usability"", which is a fancy word for saying people's time and effort, which is literally the only truly non-renewable, priceless resource we have.",assertion,pre-labelled (Claude)
+My experience has been that security is mostly treated as some contractual obligation that has little benefit and just costs money so the minimum amount of effort that prevents charges of gross negligence is put in. But I’m glad to hear that apparently there are places that take it more seriously.,assertion,pre-labelled (Claude); hard: experience vs assertion — 'my experience has been' but names nothing
+"I love how the data from top players shows that they're using a build on the Pareto Front, i.e. that the wisdom of crowds settles on a meta that is optimum. I wonder if we analyzed other games, if the meta were all consistently on the Pareto Front (WoW, Diablo, w/e). Likely so.",argument,pre-labelled (Claude)
+"Any model that is going to be meaningfully useful is going to have the potential for harm too. It's not possible to know enough about chemistry to be useful to a chemist, without also being able to figure out how to synthesize drugs. It's not possible to have enough knowledge to be useful to any/all programmers, without being able to figure out how to hack a system, or create a virus. That's just kind of life though.",argument,pre-labelled (Claude)
+Same here. The creature seems more fitting than the emoji too.,assertion,pre-labelled (Claude)
+Isn't the biggest problem caused by the opaque drivers for the hardware?  At least that seemed to be the roadblock a few years ago.,assertion,pre-labelled (Claude)
+I don't think they allow AOSP (which is not Android) either.,assertion,pre-labelled (Claude)
+How do I get started though? :/ I feel like I need a couple mil in seed funding and a team that understands the mission.,chatter,pre-labelled (Claude)
+"Yes. Emergent behaviors.
+
+This is why a healthy, society-aligned regulatory regime is impoetant, to set incentives. If you make more money being decent than you would being abusive, companies will adapt. They are more like corals than they are like people.",argument,pre-labelled (Claude)
+It works because models are not deterministic so you can prompt two instances of the same model to be adversaries of each other,argument,pre-labelled (Claude)
+"Doesn't that require a business account (so, actually, two business accounts since that's the minimum)?",chatter,pre-labelled (Claude)
+"If you're a company with a considerable API bill, buying a few Blackwells and a rack could make a lot of economic sense, while still giving your security team full control of the infrastructure",assertion,pre-labelled (Claude)
+"Have you counted your thinking tokens for say Opus or Fable? It wouldn’t surprise me if frontier closed models “over-reason” just as much, but you don’t see it thanks to the summariser.
+
+(We do know GPT5.6 have adopted the caveman shorthand, which explains its token efficiency).",argument,pre-labelled (Claude)
+I think it has to do with arm64 not supporting plugins and thus not shipping with any.,assertion,pre-labelled (Claude)
+It seems like the new UI look doesn't have light mode available and the only option to have it is to switch back to the old UI? That's a weird choice.,assertion,pre-labelled (Claude)
+What possesses people to not include a screenshot on pages like this?,chatter,pre-labelled (Claude)
+Usually I can’t stand scroll animated pages but they actually did a nice job at it.,chatter,pre-labelled (Claude)
+"Sure, but how is this different from a human ""intention""?
+
+All human intentions are just chemical/thermal/electrical changes interacting in a physical substrate to mindlessly ""pursue"" a different ""goal"" of chemical/thermal/electrical states.
+
+Unless you think the chemicals inside a brain are conscious and therefore willful or intentional!",argument,pre-labelled (Claude)
+A strong hint this is the case is the fact that nobody can define consciousness.,assertion,pre-labelled (Claude)
+I think this is because the primary use case of gemini is google search overview and the gemini app. thats probably 98% of gemini tokens. they didnt predict how important agentic coding would become.,assertion,pre-labelled (Claude)
+"Amazingly, these few days the Gemini 3.8 Flash (High) has been catching much more problems in code reviews than before. I think it started from the second day since I posted the observation above. Maybe somebody from Google saw my posts and tuned some knobs in the model to allow more critical thinking?
+
+Another observation, Gemini's review on code is more critical now, but its review on design plans is still quite agreeable - it tends to approve Codex's design plan immediately, while Claude could often pick out a bunch of problems in the design plan in the first round of reviews.",experience,pre-labelled (Claude)
+Losing weight is probably worth the tradeoff for most Americans.,assertion,pre-labelled (Claude)
+"and I thought I was old..
+
+My Dad worked for Honeywell in the 70s, in Australia.
+
+tbh, I just google'd them and they're still in the Nasdaq-100, 100k employees .. damn. I'm not sure of when I last heard of them.
+
+I still think of them as old school punch cards and reels of tapes.",chatter,pre-labelled (Claude)
+"Which book would you recommend instead of Diamond's? If nothing exact, what comes to mind?",chatter,pre-labelled (Claude)
+"I just looked online, and paintball bow and arrows exist!
+
+(kinda pricey though)",chatter,pre-labelled (Claude)
+"Vanilla CSS (rule engine based on files) is unusually hard for what it provides. It is quite bad abstraction.
+
+Aim of many styling solutions is to completely remove brittle CSS files  .",assertion,pre-labelled (Claude)
+"Basic question, is there something wrong with advertising your paid services via /llms.txt ? Whatever the hook is, we are all building with agents now.
+
+Obviously I have no data on conversion rates or overall efficiency whatsoever, but would imagine lots of marketers are on this already no?",chatter,pre-labelled (Claude)
+"For me, the biggest benefits of tailwind vs other options is
+
+a) it helps you codify your design system in utility classes. It makes it easier to keeps things consistent.
+
+b) LLMs understand it better than plain css or other css-in-js systems where you're constantly wrestling control back. I mean, you still wrestle, but less.
+
+Were I work I have to deal with an 8-years old codebase and we've switch several times from plain css, css modules, styled components, radix and now tailwind. I would be mad if I still had to write all those classes manually, but it's not the case anymore thank God.",experience,pre-labelled (Claude)
+"Again, lots of people put in 9 years of work and never get anywhere with it. The success tailwind has had is not a consequence of the work.",assertion,pre-labelled (Claude)
+Use Muse Glimmer. It’s good.,assertion,pre-labelled (Claude)
+"It's not really fair to compare API pricing to subscriptions. You can indeed get lots of usage from a codex subscription, but once you start paying per token it gets a lot more painful as you noticed. There a price decrease is a big deal.",argument,pre-labelled (Claude)
+"Holy shit, is this model really that bad???
+
+Just asked it a question via the custom opencode go endpoint routed over cloudflare ai gateway doesnt show me the correct models. My fault was that I set ""https://opencode.ai/zen/go"" as endpoint and tried my-gateway.com/custom-ocgo/v1/models, turns out I had to add /v1 to the opencode url and leave it on my -gateway.com.
+
+But first it told me that opencode is not on the compat endpoint and than it recommendet ""Option 3: Nutzung seit Curse die Integration des Providers класный"" . Not to mention some complete gibberish like ""Falls Opencode.ai in Cloudflare Eing? Wenn ja, wähle den eingebauten provider o.ä. Weil der Gateway dann ein eigenes Modell-List gibt."" or ""Schlage die Modellnamen in einer Liste ab (z.B. lokal fester Key)""
+
+Is this just cloudflare or is it really that bad? I mean thats not even the level of LLama2 7b ...",experience,pre-labelled (Claude)
+"The real moat is enterprise connections.
+
+Which is why while HN is sleeping and thinking Google and MS are done in the space, Copilot and Gemini are winning most of the non-tech: it's just an extension of their current teams/cloud offerings that companies were already using.
+
+I have asked most of my non-tech friends: chemicals, banking, insurance, consultancy. They are all on Gemini or Copilot.",experience,pre-labelled (Claude)
+"Night and day, thank you!",chatter,pre-labelled (Claude)
+I prefer GLM 5.3 (Flash or not) over Deepseek 4.1 Flash because the GLM models are significantly less verbose.,argument,pre-labelled (Claude); hard: argument vs experience — preference with a checkable reason
+"Same experience here.
+
+I settled on Fable for design, Opus for build routine, and every now and then I'd try out the Chinese models. In my experience they do fine on small codebases, and quickly get confused on anything larger than 500k LOC.
+
+My use case is: mature, very well documented, fully Ai written code, with about 1:10 ratio of prompts/specs to code, and codebase sizes >500k and <2m LOC. Once one achieves the state of good, comprehensive design documentation I can literally vibe code with single sentence prompts thanks to the extensive test coverage, ADRs, and tens of thousands of lines of specs. Fable/Opus works predictably well, the Chinese models are literally dangerous to the codebase.",experience,pre-labelled (Claude)
+So then don't do that - the US trend is towards closed-loop cooling.,assertion,pre-labelled (Claude)
+"Hmm, let’s not talk about my German poor internet connection please :)",chatter,pre-labelled (Claude)
+I just finished two solid months of my life cleaning up a vibe coded app.,experience,pre-labelled (Claude)
+"The fact that the number is still based on the birth of Christ shows people are not pretending it isn't based on that. The term CE was adopted to lessen the implied endorsement of said religion via the terms Christ and ""the year of OUR lord"".",argument,pre-labelled (Claude)
+This is one of my favorite things to have ever read on HN,chatter,pre-labelled (Claude)
+"Ah yeah that explains my experience a bit better. I was there in the COVID wfh time, 2020 or so, then rejoined 2024 when I experienced things not too unlike what you described. (except I joined as a principal, ~8-10 years of experience, and received backstabbing and lies from juniors and managers (edit and tech lead)).
+
+I don't recommend going to Plano, TX and joining the Auto Navigator product division.",experience,pre-labelled (Claude)
+"Giving up internet and phones still doesn't let me afford 5 houses and 5 kids, not even moving to a tent in the woods offsets that much expense",assertion,pre-labelled (Claude)
+"Internet was the new frontier in the 90s, and future so bright, “you gotta wear shades.”",chatter,pre-labelled (Claude)
+"Agreed, now tell me again how “exciting” that is.",chatter,pre-labelled (Claude)
+"No, I’m not. You can take it to mean just the tech workforce, and still none of these quotes say that the entire tech workforce will be eliminated overnight. The second one is the closest, but it’s talking about tasks, not jobs. Most of the others are all talking about max 50% of the tech workforce over years, not “entire” workforce “overnight”. The Altman one is a tiny fragment, who knows what the context even is!
+
+AI skeptics constantly lie and misrepresent what the leaders in this field have actually said, and then get themselves all spun up about something they fabricated in the first place!
+
+It’s both humorous and a little sad.",argument,pre-labelled (Claude)
+Eternal September comes for us all.,assertion,pre-labelled (Claude)
+"Well I had to Google that!
+
+https://en.wikipedia.org/wiki/Eternal_September
+
+Amazing!",chatter,pre-labelled (Claude)
+"I'd rather have you answer it, so thanks. My point is that if intent or knowledge is required, that means you must be aware of a crime by you or someone else. Assuming your property has remained under your control, and that you have committed no crime (which is always supposed to be the presumption), the chief way by which you would find out that your own property, that you can usually destroy freely, is now deemed ""evidence"" and not to be destroyed, is by being charged with a crime involving said property. Until you are charged, you don't know it's evidence. So the charge is not irrelevant. Anyone can read the damn law, I'm saying the law is bullshit and rests on circular reasoning. Charging with destroying evidence will in some cases require presuming guilt for the crime the evidence supposedly supports.",argument,pre-labelled (Claude)
+"> it encourages a sense of hopelessness and disregard for laws and civility.
+
+That is true. I hope that people sees my comment as a push to do better, not a reason to give up. Things are never perfect, anywhere. And that's why we should continue pushing for more equality, defending the environment and making better the live of working class people.",assertion,pre-labelled (Claude)
+"I mean this more generally, beyond that team. Oracle have used their ownership of Java as a thumping great cudgel before, and my own feeling is that the Google lawsuit basically ended Java’s appeal as a language on which others would risk any kind of innovation. A more nuanced approach might have preserved its relevance.",argument,pre-labelled (Claude)
+"> nobody
+
+Speaking for yourself I guess",chatter,pre-labelled (Claude)
+"Which makes it a great product in a comparatively small niche, and a ""meh"" premature optimisation pretty much everywhere else. Except for right at the bottom end where it's a step up from a JSON file in an S3 bucket.",assertion,pre-labelled (Claude)
+I mean this reminds me of Firebase v1 and FoundationDB I think both of which have a favorable reputation for quality in both design and implementation. I do think there's something to be said for being forced to code against what operations are actually fast in your DB. Once it works you can be reasonably confident it will also be fast rather than the typical RDBMS experience of getting an abundance of rope with which to hang yourself with. You often won't find out until it's already load bearing that your query doesn't scale.,argument,pre-labelled (Claude)
+What’s the alternative? Which system would allow people to sue for $10 if the work required to do that is worth significantly more?,assertion,pre-labelled (Claude)
+">  If it’s false (which it likely is)
+
+it isnt false and you would know that if you read the article. Please dont comment on HN without reading the article....",chatter,pre-labelled (Claude)
+"Thinking you can only survive a motion to dismiss, where your allegations have to be accepted as true, but that you can’t win the case if you have to go to trial, is thinking that your case has no merit. It’s misconduct.",argument,pre-labelled (Claude)
+"It’s not clear what was “meant” to happen since the stated offer was for a 4 year vest. While the cover letter for the actual options grant says 4 quarters. It would be interesting to see what the actual governing documents referenced in the cover letter say since those are the actual terms. Presumably they match with the cover letter since lawyer time was spent on this at all, but it could of course also say a completely different 3rd vesting schedule",argument,pre-labelled (Claude)
+"A ""navigational query"" is a query with a certain website in mind.  So like if you search for [facebook], 99.99% of the time you are looking to go to Facebook, if you search for [hacker news] 99.99% of the time you are looking to go to news.ycombinator.com.  Basically it replaces the address bar for people who don't know what URLs are.  You aren't looking for information about the business, you want to go to the site/business itself.",argument,pre-labelled (Claude)
+"that's just simply not true.
+
+talking about doomscrolling and how it would be better not to do it is one of the favourite pastimes of the doomscroller. loads of fb users hate it but struggle to believe they could do without it.",assertion,pre-labelled (Claude)
+Thanks to you and @bradley for the explanation.,chatter,pre-labelled (Claude)
+"""intentional web surfing"" is a phrase i've been exploring recently. hosting an event to turn it into an activity here in my city, should be interesting to see how people respond.",chatter,pre-labelled (Claude)
+"Worth checking out the methodology this guy put together using Jev and Haiku at appropriate points to cut the cost and also speed up a deep research job:
+https://news.ycombinator.com/item?id=50019056",chatter,pre-labelled (Claude)
+"I'm fully open to the idea of having to fly to China to buy hardware. If we're seeing $25,000 US prices versus like $4,000 in China, might as well go visit the great wall and have a vacation.",assertion,pre-labelled (Claude)
+Nor are most other neighbors selling guns all day. At some point the analogy breaks down because companies aren't actually people (though this seems to be a divisive take the last few decades).,argument,pre-labelled (Claude)
+"This is exactly what I want: To communicate with me, have your LLM expand your message to include relevant parts of _your_ context, then I will have my LLM summarize it as briefly as possible with respect to _my_ context.",assertion,pre-labelled (Claude)
+"This is a very good way of thinking about it! I like the nuance. Personally I don't usually include that much nuance when I write about this, because I don't expect my short comment to generate dozens of threads of discussion.",chatter,pre-labelled (Claude)
+Wikipedia has solved this problem by using link + date for references and providingan archive.org link when the original is no longer available.,argument,pre-labelled (Claude)
+"One aspect I am bothered by is how all writing style is becoming homogenized. Individual writing ""voice"" is becoming one collective AI voice.",assertion,pre-labelled (Claude)
+"Proof? Like, do you have logs or something? Not calling you a liar but this seems not correct based on my usage.",chatter,pre-labelled (Claude)
+"https://marginlab.ai/trackers/codex/
+
+Am I misinterpreting this, or did OpenAI clearly nerf GPT-6 Sol on the 23rd.",argument,pre-labelled (Claude)
+Hmm interesting idea. I’m pretty confident there is generalization and learning that occurs during RL that does make the model smarter. So I think the distinction doesn’t fully hold up.,assertion,pre-labelled (Claude)
+$10 output is a good sweet spot.  Use that for problem solving and glm5.3 (at 40¢) for bulk work,assertion,pre-labelled (Claude)
+"> I wonder how they can handle it,
+
+In Norway there is a list [1] run by the state registry service (Brønnøysundregitrene).  Any individual can add their phone number to the list.
+
+Anyone cold calling is required to check that list at least once a month and there are fines for calling someone on the list.
+
+[1] https://www.brreg.no/om-oss/registrene-vare/om-reservasjonsr...",argument,pre-labelled (Claude)
+"> Right, but just because the protests you've been to in your 40 years haven't worked in the way you wished, doesn't mean you think every single protest through all time also been unsuccessful in changing anything, right?
+
+I don't really care about historical protests tbh, that's the past. They may have been effective at the time but that's a different context, with different values and virtues
+
+We have to operate in today's environment which is one where protest is just viewed as a part of daily life, an annoyance to be tuned out, like walking past a homeless person on the sidewalk",assertion,pre-labelled (Claude)
+"You can’t fix hallucinations if you don’t even know what the code does.  In my experience working with dozens of firms, offshore do not give a single damn about understanding.  Frankly, their job security rests on nobody understanding what the code does.  If they can inflict the brain damage on your organization so they can keep billing you in the future they will absolutely do it.",assertion,pre-labelled (Claude); hard: experience vs assertion — 'in my experience working with dozens of firms' names no specific thing done
+"I experienced something similar with the AliBaba app. Whenever I had it installed, my Bluetooth devices would only ever send audio in ""headset"" mode — very poor quality.
+
+Uninstalling the app fixed it up.",experience,pre-labelled (Claude)
+"> though picking Angular 2 over React not so much
+
+It sounds like you're coming at this from a perspective of popularity and thus access to engineering candidates with expertise in it which is fair, but speaking as someone who also went with Angular 2 over React during those times, I'm still using Angular and I'm very happy with it from a technical perspective. Yes, it does mean there are less options for hiring, but it has been a positive experience for my team and for me in my own projects to stick with it.",experience,pre-labelled (Claude)
+You should have tried Deezer. I had switched to Spotify because I couldn't tolerate bugs anymore.,experience,pre-labelled (Claude)
+"""...and the recommendations are pretty good""
+
+This is so confusing to me, many people say that, but a year ago my wife and I tried to switch to Apple Music. Bad recommendations were the main reason why it didn't stick for us. Every time my children would listen to some kids songs a few minutes later it would start playing ""random"" songs.
+
+Maybe it's similar to Apple Maps, it works good for the American market, but once you try it in other countries/languages the quality is not the same.",experience,pre-labelled (Claude)
+"I used to game on my 2014 MBP. That was a bad idea - took about 5 years, but eventually my batteries became spicy pillows.
+
+Turns out that even with the fans at full blast, the batteries didn’t like being so hot over prolonged periods.
+
+I’m happy with my M4 mini now, with a separate windows pc for gaming.",experience,pre-labelled (Claude)
+"I got an OWC Express 1M2 precisely because of thermal fears. The heatsink is huge, but no fans. Only real issue is needing to be careful to not nudge the cables.
+
+I also suspect that trying to stream larger LLM models from disk hammered the USB 4 connection too much - lead to system hangs, so now stream from the internal SSD instead.",experience,pre-labelled (Claude)
+"I feel the same way - I'll probably get a Pixel next. I had one many, many years ago before switching to an iPhone and it was excellent.",experience,pre-labelled (Claude)
+"I started using llm's on a $20 claude license, then it became a $100 license.
+
+Then all the mythos warnings happened, then the fable access issues started.
+
+At that point, I just wanted to try something else because I didn't want to feel vendor locked by anthropic.
+
+Then I tried codex on the $100 plan. I've never been happier. It does everything claude can do, without any token limit issues or anything for me.
+
+I don't see myself going back to claude anytime soon. I also highly recommend folks to not vendor lock yourself to a model. You need to try multiple models for yourself and see what's possible. There should be zero loyalty to any frontier lab because of how fast things change and how volatile model access, uptime and customer experience can be with these things.",experience,pre-labelled (Claude)
+"That's how I worked but it gets tedious for reviewers because there's no easy way to navigate the stack. In the end, I vibe coded an internal PR stacker which stores stack data using `git notes` (allowing multiple people to work in a stack) and updates PR description with stack navigation. 
+It uses merge, rather than rebase because history is not that important (final code is).",experience,pre-labelled (Claude)
+"My story from Facebook ages ago. I was getting healthy organic traffic from Facebook. Thought maybe if I buy ads, I'll get even more? I bought ads and indeed traffic improved. Then I thought the organic traffic I had was enough so I stopped buying ads. Guess what happened? Organic traffic from Facebook tanked and never recovered.
+
+From there on I decided to never buy any ads.",experience,pre-labelled (Claude)

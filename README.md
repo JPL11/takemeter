@@ -91,7 +91,9 @@ opinion, a sarcastic jab at the subject — and offers nothing to support it
 beyond the claim itself.
 
 **Example 1:**
-> Mozilla is not a company though.
+> It's called growing up. And ultimately it's liberaing.
+>
+> Many people don't achieve that level of understanding before their death.
 
 **Example 2:**
 > Stock prices always include the expected future profits, that's the market rates a stock
@@ -154,6 +156,19 @@ Being *wrong* doesn't move a post out of `argument`; having *no reason* does.
   worse" or "every benchmark I've seen says otherwise" names nothing the
   writer actually did. `experience` has to say what was done, used or seen.
   Otherwise it's judged as a bare claim.
+
+**Added while labelling (posts the rules above didn't settle):**
+
+- **Fact-only posts.** A one-line correction with nothing behind it
+  ("Mozilla is not a company though", "They do have Fields medal winners
+  among their staff") is `assertion` — the fact *is* the claim and nothing
+  supports it. It becomes `argument` only when a specific detail does the
+  work: a number, a date, a quote, a source, or an example with specifics
+  (the Pixel 2 post above). A fact passed along with no position attached
+  ("it starts at $2999 in Canada!") is `chatter`.
+- **Recommendations are opinions.** "Try Librera if you haven't" and "Use
+  Muse Glimmer. It's good." are `assertion` — a position on the topic with no
+  support.
 
 ---
 
