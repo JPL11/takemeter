@@ -42,7 +42,15 @@
 <!-- Your community, and what your classifier sorts posts into. Three or four
      sentences. -->
 
-
+TakeMeter sorts **Hacker News comments** by what the comment is offering the
+reader and what it's standing on. Each comment gets one of four labels:
+`experience` (backed by something the writer did or saw), `argument` (backed
+by a fact, number, source or mechanism a reader could check),
+`assertion` (a position with nothing behind it), or `chatter` (no claim about
+the topic at all: thanks, jabs, questions). On HN, regulars skim for the
+first two and skip the last two. This classifier tries to make that skim
+explicit. Notes from the first reading pass are in
+[`community_notes.md`](community_notes.md).
 
 ---
 
@@ -175,21 +183,42 @@ Being *wrong* doesn't move a post out of `argument`; having *no reason* does.
 ## The Dataset
 
 <!-- Where you collected from, how you labelled, your counts, and three hard
-     cases. -->
+cases. -->
 
-**Where the posts came from:**
+**Where the posts came from:** Public Hacker News comments, pulled through
+HN's public search API (`hn.algolia.com`, no login or key), from 188
+front-page threads with 120+ comments posted in the 75 days before
+2026-10-09. To stop the busiest AI-release threads from dominating, I took at
+most 4 comments per thread, shuffled, and kept only comments of 25–900
+characters, with no `[flagged]`/`[dead]` comments. Threads about wars,
+deaths and US politics were filtered out by title. I also dropped 13 comments
+by hand that got past the filter: a few on the same topics, plus some
+fragments that made no sense without their parent comment. Posts are
+whole and untrimmed. The HN link for every row is in
+[`data/labels_sources.csv`](data/labels_sources.csv).
 
-**How I labelled them:** <!-- Cold first? Pre-labelled with AI and corrected?
-Say so plainly — the disclosure is required, not penalised. -->
+**How I labelled them:** All 248 rows were pre-labelled by Claude, an AI
+assistant, working from the definitions and decision rules above. I'm
+disclosing that plainly, and every row's `note` says so. The
+pass went in two sweeps: the first 250 comments of the pool in order (237
+kept), then a targeted pass for the thinnest label, which added 10
+`experience` posts and 1 `assertion`. Posts that needed a rule to decide are
+marked `hard:` in the `note` column with the two candidate labels. The
+20-row cold pass is described under *Pre-labelling disclosure* below.
 
 **Counts per label:**
 
 | Label | Count | Share |
 |---|---|---|
-|  |  |  |
-|  |  |  |
-|  |  |  |
-| **Total** |  | 100% |
+| `argument` | 70 | 28% |
+| `assertion` | 68 | 27% |
+| `chatter` | 62 | 25% |
+| `experience` | 48 | 19% |
+| **Total** | 248 | 100% |
+
+No label is near the 70% cap. `experience` is the thin one. It started at
+38 (16%), which is why I went back for more. Even at 48 it lands only 7 posts
+in the test split.
 
 **Three hard cases**
 
@@ -197,25 +226,36 @@ Say so plainly — the disclosure is required, not penalised. -->
      been, and what you chose. These are worth more than the easy 190. -->
 
 **1.**
-> *The post:*
+> *The post:* "it starts at $2999 in Canada!"
 >
-> *Could have been:*
+> *Could have been:* `assertion` or `chatter`
 >
-> *I chose, because:*
+> *I chose, because:* `chatter`. It's a checkable fact about the topic, so my
+> first instinct was `assertion`. But `assertion` is defined as *taking a
+> position*, and this takes none — it reports a price with an exclamation
+> mark. This post is where the "a fact passed along with no position is
+> `chatter`" rule came from.
 
 **2.**
-> *The post:*
+> *The post:* "My experience has been that security is mostly treated as some contractual obligation that has little benefit and just costs money so the minimum amount of effort that prevents charges of gross negligence is put in. But I'm glad to hear that apparently there are places that take it more seriously."
 >
-> *Could have been:*
+> *Could have been:* `experience` or `assertion`
 >
-> *I chose, because:*
+> *I chose, because:* `assertion`. It literally opens with "my experience",
+> but it never says what the writer did, where, or what they saw. Under the
+> vague-first-person rule that came out of the stress test, "my experience
+> has been that X" with no specifics is a bare claim about X.
 
 **3.**
-> *The post:*
+> *The post:* "Did you even read my comment? Specifically this part: > There's 1000 chatgpt clones but everyone still uses chatgpt. There might be 1000 jev clones soon enough but people won't switch unless there's something significantly better about it. The fact that Jev will be cloned is exactly why brand and distribution matter even more. When 1,000 products do the same thing, you'll use the one you know."
 >
-> *Could have been:*
+> *Could have been:* `chatter` or `argument`
 >
-> *I chose, because:*
+> *I chose, because:* `argument`. The opening line is a pure jab at the other
+> commenter, and posts that open this way usually are `chatter`. But "a claim
+> beats chatter", and the claim (brand matters more once a product is cloned)
+> rests on an outside example you can check: ChatGPT clones exist and people
+> still use ChatGPT. Delete the conclusion and that example is still there.
 
 ---
 
@@ -223,17 +263,37 @@ Say so plainly — the disclosure is required, not penalised. -->
 
 <!-- Your starting model, your settings, and anything you changed and why. -->
 
-**Base model:**
+**Base model:** `distilbert-base-uncased`, the notebook default.
 
-**Settings:** <!-- epochs, learning rate, batch size, seed -->
+**Settings:** 3 epochs, learning rate 2e-5, batch size 16, max length 128
+tokens, seed 42. Trained on **`mps` (Apple Silicon GPU), torch 2.14.1**, also
+recorded in `results.json`. The whole of section 4 took well under a minute.
 
-**Anything I changed from the defaults, and why:**
+**Anything I changed from the defaults, and why:** Nothing. I wanted the
+first run to be the plain recipe, so that next unit's improvement is the
+only thing that moves.
 
-**Split sizes:** <!-- train / val / test, and per-label counts in the test
-split. If a label had fewer than about 8 in test, say so — it explains a lot
-of next unit's variance. -->
+One thing I checked rather than changed: the median post is 53 tokens, but
+32 of 248 posts (13%) are longer than 128 tokens and get truncated. Those are
+almost all `argument` and `experience` (23% of each, against 3–5% of
+`assertion` and `chatter`). That's because supported posts are longer —
+median 326 and 338 characters, against 131 for `assertion` and 89 for
+`chatter`. So the model sees *less* of exactly the posts whose support often
+comes at the end. I left `MAX_LENGTH` at 128 for this run and flagged it as a
+candidate for unit 6.
 
+**Split sizes:** train 172 · val 38 · test 38 (stratified 70/15/15, seed 42).
 
+| Label | train | val | test |
+|---|---|---|---|
+| `experience` | 34 | 7 | **7** |
+| `argument` | 48 | 11 | 11 |
+| `assertion` | 47 | 11 | 10 |
+| `chatter` | 43 | 9 | 10 |
+
+`experience` has **7** examples in test, under the notebook's threshold of 8.
+One post more or less changes its F1 by a lot, so expect it to be the
+jumpiest number across next unit's three seeds.
 
 ---
 
@@ -246,19 +306,44 @@ of next unit's variance. -->
      workflow and disclosing it costs you nothing. Not disclosing it is the
      problem. -->
 
-**Moment 1**
+**Moment 1: stress-testing the taxonomy before labelling**
 
-- *What I asked for:*
-- *What came back:*
-- *What I changed:*
+- *What I asked for:* Eight posts sitting on the boundaries between my four
+  labels, to classify using only the written definitions.
+- *What came back:* Eight variations on one claim ("Rust compile times are a
+  dealbreaker"): backed by our CI times, by monomorphization, by nothing; a
+  "thanks, but you're wrong"; a Phoronix benchmark plus "matches my laptop";
+  "Source? Every benchmark I've seen says the opposite"; a sarcastic price
+  jab; and a bare link. Six sorted cleanly. Two didn't. "Thanks, but you're
+  wrong" was both `chatter` and `assertion`. "Every benchmark I've seen" read
+  as `experience` but named nothing.
+- *What I changed:* Added two rules before labelling a single real post:
+  **a claim beats chatter**, and **vague first person isn't `experience`**.
+  The second one decided hard case 2 above.
 
-**Moment 2**
+**Moment 2: pre-labelling, and the gap it exposed**
 
-- *What I asked for:*
-- *What came back:*
-- *What I changed:*
+- *What I asked for:* A first-pass label on each of the 250 collected posts,
+  under the definitions and rules in this README, with any post that needed a
+  rule to decide flagged in the `note` column.
+- *What came back:* Labels for every post, but also a real inconsistency.
+  "Mozilla is not a company though" (my original `assertion` example) and the
+  Pixel 2 chip-speed post (my `argument` example) are *both* bare facts
+  offered as a rebuttal, and nothing in my rules said why they differed.
+- *What I changed:* Wrote the **fact-only** rule (a one-line correction with no
+  detail behind it is `assertion`; a number, date, quote, source or specific
+  example makes it `argument`; a fact with no position is `chatter`). I also
+  swapped the Mozilla post out as the `assertion` example for one that isn't
+  borderline. The flagged rows are the `hard:` notes in `labels.csv`.
 
-**Pre-labelling disclosure:**
+**Pre-labelling disclosure:** All 248 labels in `labels.csv` were
+pre-labelled by Claude (an AI assistant, run through Claude Code) and are
+marked `pre-labelled (Claude)` in the `note` column. Claude also wrote the
+collection script for the HN search API. **The 20-row cold pass has not been
+done yet.** Those 20 rows have to be labelled by a person with no help, so
+they can't be produced the same way. When it's done, those rows will be
+marked `cold`, and how often the cold labels agree with the pre-labels will
+be reported here.
 
 <!-- ═══════════════════════ UNIT 6 — THE TEST ═══════════════════════
 
