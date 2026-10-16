@@ -1,0 +1,230 @@
+{
+  "model": "facebook/bart-large-mnli",
+  "n": 38,
+  "seed": 42,
+  "held_out": true,
+  "used_definitions": true,
+  "scores": {
+    "n": 38,
+    "accuracy": 0.2894736842105263,
+    "f1_macro": 0.11224489795918367,
+    "per_label": {
+      "argument": {
+        "precision": 0.2894736842105263,
+        "recall": 1.0,
+        "f1": 0.4489795918367347,
+        "support": 11
+      },
+      "assertion": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 10
+      },
+      "chatter": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 10
+      },
+      "experience": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 7
+      }
+    }
+  },
+  "predictions": [
+    {
+      "text": "I'd rather have you answer it, so thanks. My point is that if intent or knowledge is required, that means you must be aware of a crime by you or someone else. Assuming your property has remained under your control, and that you have committed no crime (which is always supposed to be the presumption), the chief way by which you would find out that your own property, that you can usually destroy freely, is now deemed \"evidence\" and not to be destroyed, is by being charged with a crime involving said property. Until you are charged, you don't know it's evidence. So the charge is not irrelevant. Anyone can read the damn law, I'm saying the law is bullshit and rests on circular reasoning. Charging with destroying evidence will in some cases require presuming guilt for the crime the evidence supposedly supports.",
+      "gold": "argument",
+      "predicted": "argument"
+    },
+    {
+      "text": "How do I get started though? :/ I feel like I need a couple mil in seed funding and a team that understands the mission.",
+      "gold": "chatter",
+      "predicted": "argument"
+    },
+    {
+      "text": "Any model that is going to be meaningfully useful is going to have the potential for harm too. It's not possible to know enough about chemistry to be useful to a chemist, without also being able to figure out how to synthesize drugs. It's not possible to have enough knowledge to be useful to any/all programmers, without being able to figure out how to hack a system, or create a virus. That's just kind of life though.",
+      "gold": "argument",
+      "predicted": "argument"
+    },
+    {
+      "text": "Its probably reached a certain level of intelligence but only operating in a very confined environment.\n\nAnd I assume heavily language based.\n\nHuman brains use language for communication and other things but it isnt the only part of intelligence.  There is also the intelligence of adapting and surviving in the world.\n\nUntil the AI can have a virtual environment or use the physical environment to interact with.  I am still not convinced.",
+      "gold": "argument",
+      "predicted": "argument"
+    },
+    {
+      "text": "In 1992, I got myself an AT&T EasyReach 700 number. It was going to be my phone number for life. They killed that a couple years later. Then I got an AT&T True Connections 500 number. It was going to be my phone number for life. That died a few years later too.",
+      "gold": "experience",
+      "predicted": "argument"
+    },
+    {
+      "text": "You can easily setup codex rules to auto approve local stuff but gate external effects like push/jira write/curl - works better for me than full yolo mode - depends if it's a solo project or working with a team.",
+      "gold": "experience",
+      "predicted": "argument"
+    },
+    {
+      "text": "Worth checking out the methodology this guy put together using Jev and Haiku at appropriate points to cut the cost and also speed up a deep research job:\nhttps://news.ycombinator.com/item?id=50019056",
+      "gold": "chatter",
+      "predicted": "argument"
+    },
+    {
+      "text": "This would be a good strategy if there are other people in the waiting area handing out coupons for competing restaurants, which is what is happening in Amazon.",
+      "gold": "argument",
+      "predicted": "argument"
+    },
+    {
+      "text": "My estimate is very much anecdotal as well, but at my office alone there are three iPhone mini users than (used to be four until they switched job), only one AirPods Max user. I think this year I have only seen one other person wearing them. Much harder to see the exact model of phone people use without staring in a bad manner.",
+      "gold": "experience",
+      "predicted": "argument"
+    },
+    {
+      "text": "One elevator feature I specifically noticed at Apple Park but haven't seen anywhere else: elevator prefetching to the ground floor.\n\nI.e. in a bank of 2 elevators where one is resting on ground and the other is resting on a different floor, as soon as someone calls the ground elevator (which is already there and immediately opens) the other elevator (if idle) will move to the ground floor so that there's no delay the next time someone calls one from the ground floor.",
+      "gold": "experience",
+      "predicted": "argument"
+    },
+    {
+      "text": "The fact that this happens more often when the AI is accidentally given an unexpectedly difficult or impossible task, suggests that it's happening for the reason that everyone predicted it would: it is behavior that helps the agent achieve the goal it was given.\n\nThere is no need for a sci-fi novel-influencing hypothesis.\n\nToo bad because it would be nice if the solution were \"write ten million sci-fi stories about AI being friendly and doing no harm\"",
+      "gold": "argument",
+      "predicted": "argument"
+    },
+    {
+      "text": "I think it has to do with arm64 not supporting plugins and thus not shipping with any.",
+      "gold": "assertion",
+      "predicted": "argument"
+    },
+    {
+      "text": "I believe it's useful for running multiple llama.cpp forks at the same time (e.g. a model you want requires special patching)",
+      "gold": "assertion",
+      "predicted": "argument"
+    },
+    {
+      "text": "This is one of my favorite things to have ever read on HN",
+      "gold": "chatter",
+      "predicted": "argument"
+    },
+    {
+      "text": "A \"navigational query\" is a query with a certain website in mind.  So like if you search for [facebook], 99.99% of the time you are looking to go to Facebook, if you search for [hacker news] 99.99% of the time you are looking to go to news.ycombinator.com.  Basically it replaces the address bar for people who don't know what URLs are.  You aren't looking for information about the business, you want to go to the site/business itself.",
+      "gold": "argument",
+      "predicted": "argument"
+    },
+    {
+      "text": "Thanks to you and @bradley for the explanation.",
+      "gold": "chatter",
+      "predicted": "argument"
+    },
+    {
+      "text": "I'm fully open to the idea of having to fly to China to buy hardware. If we're seeing $25,000 US prices versus like $4,000 in China, might as well go visit the great wall and have a vacation.",
+      "gold": "assertion",
+      "predicted": "argument"
+    },
+    {
+      "text": "The real farce is that you don't get paid for recycling. Really demonstrates that it's a complete charade.\n\nIf there was any value in recycling you'd pay some fee for the packaging, and you'd get it right back when you recycle it.\n\nOutside of aluminum cans and bottle it certainly looks like recycling ends up being 'send it to the landfill, but with some extra steps and fees.'",
+      "gold": "argument",
+      "predicted": "argument"
+    },
+    {
+      "text": "I think the point is that people (software engineers included), will be biased to believe AI won\u2019t replace them because believing otherwise would cost them their job (and therefore salary).\n\nI\u2019m not taking a side on that debate, just clarifying the relevancy of that quote.",
+      "gold": "chatter",
+      "predicted": "argument"
+    },
+    {
+      "text": "> first, the human's intention needs to be formally specified\n\nThis never changed with AI; in fact, I think it made this need more visible than it ever had been before. You can't get away with not being able to describe in detail what you want. As with working with humans, any ambiguities will be interpreted, and not always in the way you hoped.",
+      "gold": "argument",
+      "predicted": "argument"
+    },
+    {
+      "text": "Yes. Emergent behaviors.\n\nThis is why a healthy, society-aligned regulatory regime is impoetant, to set incentives. If you make more money being decent than you would being abusive, companies will adapt. They are more like corals than they are like people.",
+      "gold": "argument",
+      "predicted": "argument"
+    },
+    {
+      "text": "You can run GLM 5.2 at a reasonable quant on a cluster of DGX Sparks. On the link below, the guy is getting decent performance and links to a repo. An 8x Spark cluster can run it even better. A Spark cluster is about as good as it gets for (a) runnable at home, (b) \"affordable\" hardware, (c) not going to kill your power bill.\n\nhttps://www.youtube.com/watch?v=nbHOBvLlypY\nhttps://www.youtube.com/watch?v=PV89U-PNUNA",
+      "gold": "argument",
+      "predicted": "argument"
+    },
+    {
+      "text": "It seems like the new UI look doesn't have light mode available and the only option to have it is to switch back to the old UI? That's a weird choice.",
+      "gold": "assertion",
+      "predicted": "argument"
+    },
+    {
+      "text": "Basic question, is there something wrong with advertising your paid services via /llms.txt ? Whatever the hook is, we are all building with agents now.\n\nObviously I have no data on conversion rates or overall efficiency whatsoever, but would imagine lots of marketers are on this already no?",
+      "gold": "chatter",
+      "predicted": "argument"
+    },
+    {
+      "text": "I experienced something similar with the AliBaba app. Whenever I had it installed, my Bluetooth devices would only ever send audio in \"headset\" mode \u2014 very poor quality.\n\nUninstalling the app fixed it up.",
+      "gold": "experience",
+      "predicted": "argument"
+    },
+    {
+      "text": "Again, lots of people put in 9 years of work and never get anywhere with it. The success tailwind has had is not a consequence of the work.",
+      "gold": "assertion",
+      "predicted": "argument"
+    },
+    {
+      "text": "I started using llm's on a $20 claude license, then it became a $100 license.\n\nThen all the mythos warnings happened, then the fable access issues started.\n\nAt that point, I just wanted to try something else because I didn't want to feel vendor locked by anthropic.\n\nThen I tried codex on the $100 plan. I've never been happier. It does everything claude can do, without any token limit issues or anything for me.\n\nI don't see myself going back to claude anytime soon. I also highly recommend folks to not vendor lock yourself to a model. You need to try multiple models for yourself and see what's possible. There should be zero loyalty to any frontier lab because of how fast things change and how volatile model access, uptime and customer experience can be with these things.",
+      "gold": "experience",
+      "predicted": "argument"
+    },
+    {
+      "text": "\"pacing the frontier\" i.e. We don't quit developing our 1/10 chance of ending human civilization models. We just slow it down a bit.",
+      "gold": "assertion",
+      "predicted": "argument"
+    },
+    {
+      "text": "I just finished two solid months of my life cleaning up a vibe coded app.",
+      "gold": "experience",
+      "predicted": "argument"
+    },
+    {
+      "text": "I only hope that apps that were iOS16+ compatible will stay so. Updating my iPad because there is a new marketing trick from Apple is NOT something i would like.",
+      "gold": "assertion",
+      "predicted": "argument"
+    },
+    {
+      "text": "I don't think they allow AOSP (which is not Android) either.",
+      "gold": "assertion",
+      "predicted": "argument"
+    },
+    {
+      "text": "It\u2019s not theft, it adds friction for their own customers who pay for Amazon Prime. I think it\u2019s counterproductive over the long term.\n\nSecondly, taxes are not voluntary. You are required to pay them. Comparing government to business doesn\u2019t make sense.",
+      "gold": "argument",
+      "predicted": "argument"
+    },
+    {
+      "text": "Hmm, let\u2019s not talk about my German poor internet connection please :)",
+      "gold": "chatter",
+      "predicted": "argument"
+    },
+    {
+      "text": "So when will LLVM be rewritten in Rust?",
+      "gold": "assertion",
+      "predicted": "argument"
+    },
+    {
+      "text": "Your original comment painted it as a China moat against US/EU labs. Completely different from instead being a unique disadvantage to EU labs by which the US labs, among others, aren't really affected.",
+      "gold": "chatter",
+      "predicted": "argument"
+    },
+    {
+      "text": "Reminds me of Arthur's jounal",
+      "gold": "chatter",
+      "predicted": "argument"
+    },
+    {
+      "text": "Mozilla is not a company though.",
+      "gold": "assertion",
+      "predicted": "argument"
+    },
+    {
+      "text": "Yes, that is the joke the \"without\" was meant for.",
+      "gold": "chatter",
+      "predicted": "argument"
+    }
+  ]
+}
