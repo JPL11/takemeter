@@ -462,6 +462,12 @@ Seed 42 (the same run as `results.json`):
      data/staff_taxonomy.md, not your own — so every argument below is made
      from those definitions and those decision rules. -->
 
+*Tooling check:* `agreement.py` was run against the staff labels alone
+(staff vs. staff: 30/30; two labels deliberately flipped: 28/30, both
+listed), to confirm the text matching and output work. This tests the script,
+not my labelling. My agreement rate is below once `my_staff_labels.csv` is
+done.
+
 **Agreement rate:** ___ / 30 = ___%
 
 <!-- Nobody grades this number. A 60% who argues every disagreement from the
