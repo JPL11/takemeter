@@ -383,22 +383,39 @@ be reported here.
 
 | Criterion | Target | Seed 42 | Seed 7 | Seed 2024 | Verdict |
 |---|---|---|---|---|---|
-| 1.  |  |  |  |  |  |
-| 2.  |  |  |  |  |  |
-| 3.  |  |  |  |  |  |
-| 4.  |  |  |  |  |  |
-| 5.  |  |  |  |  |  |
+| 1. Overall accuracy | ≥ 0.55, all seeds | 0.526 | 0.289 | 0.368 | MISSED |
+| 2. Macro F1 | ≥ 0.50, all seeds | 0.453 | 0.122 | 0.216 | MISSED |
+| 3. Lowest per-label F1 | ≥ 0.35, every label, every seed | 0.000 (`experience`) | 0.000 (`experience`, `assertion`, `chatter`) | 0.000 (`experience`, `chatter`) | MISSED |
+| 4. Confident third minus unsure third (accuracy) | ≥ 0.15, all seeds | 0.667 − 0.417 = 0.250 | 0.750 − 0.000 = 0.750 | 0.750 − 0.250 = 0.500 | MET |
+| 5. Agreement with staff set | ≥ 23 / 30 | — | — | — | *pending staff labels* |
+
+Per label, from section 6 (n_test = 38 on every seed; `mps`, torch 2.14.1):
+
+| Measure | Seed 42 | Seed 7 | Seed 2024 | Spread |
+|---|---|---|---|---|
+| Overall accuracy | 0.526 | 0.289 | 0.368 | 0.237 |
+| Macro F1 | 0.453 | 0.122 | 0.216 | 0.330 |
+| F1 — `experience` | 0.000 | 0.000 | 0.000 | 0.000 |
+| F1 — `argument` | 0.556 | 0.489 | 0.564 | 0.075 |
+| F1 — `assertion` | 0.588 | 0.000 | 0.300 | 0.588 |
+| F1 — `chatter` | 0.667 | 0.000 | 0.000 | 0.667 |
+
+Accuracy moved 0.237 across seeds, more than the notebook's 10-point line for
+a stable measure. Seed 42, the unit 5 run, was the friendly draw.
 
 ### Confusion matrix
 
 <!-- ⚠️ TYPED AS A MARKDOWN TABLE. The notebook prints one ready to paste.
      An image of a matrix earns nothing. -->
 
-| true \ predicted |  |  |  |
-|---|---|---|---|
-| **** |  |  |  |
-| **** |  |  |  |
-| **** |  |  |  |
+Seed 42 (the same run as `results.json`):
+
+| true \ predicted | experience | argument | assertion | chatter |
+|---|---|---|---|---|
+| **experience** | 0 | 6 | 1 | 0 |
+| **argument** | 0 | 10 | 1 | 0 |
+| **assertion** | 1 | 4 | 5 | 0 |
+| **chatter** | 0 | 5 | 0 | 5 |
 
 **My biggest off-diagonal number, and what it means:**
 <!-- Not "the model made mistakes" — WHICH boundary it didn't learn, and which
