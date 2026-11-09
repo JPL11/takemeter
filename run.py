@@ -18,7 +18,7 @@ class Classifier:
         self.max_length = json.loads((Path(model_path) / 'run_config.json').read_text())['max_length']
 
     def predict(self, text):
-        tokens = self.tokenizer(text, truncation=True, padding='max_length', max_length=self.max_length, return_tensors='pt')
+        tokens = self.tokenizer(text, truncation=True, padding=False, max_length=self.max_length, return_tensors='pt')
         with self.torch.inference_mode():
             probabilities = self.model(**tokens).logits.softmax(dim=-1)[0]
         index = int(probabilities.argmax())
