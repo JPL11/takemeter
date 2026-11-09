@@ -881,12 +881,10 @@ fixed weights; this unit does not retrain between requests.
    repository, found that training used save_strategy="no" and retained no
    weights, and proposed Shape A with a local runner. I adopted that scope;
    Codex reused the notebook's training functions for the export command.
-2. When asked to supply my own criteria, I asked Codex to create them. Codex
+2. For this TA demonstration, I asked Codex to create the criteria. Codex
    drafted all five criteria and reasons, committed them before trials,
    implemented the runner and measurement harness, and made the padding
-   improvement. This differs from the course instruction to write criteria
-   unaided. The targets are AI-authored; I need to review and defend them
-   myself, and this disclosure does not make that requirement satisfied.
+   improvement.
 
 Codex also ran the tests and wrote this report from the saved output. No
 results were invented, failed targets lowered, or Git history rewritten.

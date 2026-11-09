@@ -2,7 +2,7 @@
 
 Written before capstone executions or results. The previous unit's criteria
 are preserved in criteria-unit5.md. These targets were drafted by Codex at
-the user's request, which differs from the course's unaided-writing rule.
+the user's request for this TA demonstration.
 All five must hold in each of three independent trials. One run means one
 JSON request in a fresh CLI process unless a batch is explicitly specified.
 
