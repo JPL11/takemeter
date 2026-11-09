@@ -868,8 +868,8 @@ evidence/clean-export.txt, and evidence/clean-checkout.jsonl. Initial installati
 used uv with the lock file; after bootstrapping pip with ensurepip, the literal
 `python -m pip install -r requirements-lock.txt` command also completed with
 exit 0 (evidence/clean-pip-install.txt). The existing `python test.py` check
-reported 9 passed, 0 failed, and one warning about running outside an activated
-virtual environment; it was invoked with the virtual environment's interpreter.
+reported 9 passed, 0 failed, and one warning that the separate BART zero-shot
+baseline model is not cached. The capstone uses the exported DistilBERT model.
 
 The trials invoke fresh processes rather than replaying saved predictions.
 Identical labels across trials are expected for evaluation-mode inference on
