@@ -1,0 +1,34 @@
+Some weights of DistilBertForSequenceClassification were not initialized from the model checkpoint at distilbert-base-uncased and are newly initialized: ['classifier.bias', 'classifier.weight', 'pre_classifier.bias', 'pre_classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Map:   0%|          | 0/172 [00:00<?, ? examples/s]Map: 100%|██████████| 172/172 [00:00<00:00, 13081.06 examples/s]
+Map:   0%|          | 0/38 [00:00<?, ? examples/s]Map: 100%|██████████| 38/38 [00:00<00:00, 12907.64 examples/s]
+  0%|          | 0/33 [00:00<?, ?it/s]/private/tmp/takemeter-capstone-clean/.venv/lib/python3.12/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but not supported on MPS now, device pinned memory won't be used.
+  super().__init__(loader)
+  3%|▎         | 1/33 [00:00<00:30,  1.04it/s]  6%|▌         | 2/33 [00:01<00:27,  1.13it/s]  9%|▉         | 3/33 [00:02<00:25,  1.19it/s] 12%|█▏        | 4/33 [00:03<00:23,  1.22it/s] 15%|█▌        | 5/33 [00:04<00:22,  1.24it/s] 18%|█▊        | 6/33 [00:04<00:21,  1.26it/s] 21%|██        | 7/33 [00:05<00:20,  1.27it/s] 24%|██▍       | 8/33 [00:06<00:19,  1.28it/s] 27%|██▋       | 9/33 [00:07<00:18,  1.27it/s] 30%|███       | 10/33 [00:08<00:17,  1.28it/s]                                                30%|███       | 10/33 [00:08<00:17,  1.28it/s] 33%|███▎      | 11/33 [00:08<00:16,  1.35it/s]{'loss': 1.3755, 'grad_norm': 1.3632200956344604, 'learning_rate': 1.4545454545454546e-05, 'epoch': 0.91}
+
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00, 10.86it/s][A                                               
+                                             [A 33%|███▎      | 11/33 [00:09<00:16,  1.35it/s]
+100%|██████████| 3/3 [00:00<00:00, 10.86it/s][A
+                                             [A/private/tmp/takemeter-capstone-clean/.venv/lib/python3.12/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but not supported on MPS now, device pinned memory won't be used.
+  super().__init__(loader)
+ 36%|███▋      | 12/33 [00:09<00:18,  1.13it/s] 39%|███▉      | 13/33 [00:10<00:17,  1.17it/s] 42%|████▏     | 14/33 [00:11<00:15,  1.20it/s] 45%|████▌     | 15/33 [00:12<00:14,  1.23it/s] 48%|████▊     | 16/33 [00:13<00:13,  1.24it/s] 52%|█████▏    | 17/33 [00:13<00:12,  1.26it/s] 55%|█████▍    | 18/33 [00:14<00:11,  1.27it/s] 58%|█████▊    | 19/33 [00:15<00:11,  1.27it/s] 61%|██████    | 20/33 [00:16<00:10,  1.27it/s]                                                61%|██████    | 20/33 [00:16<00:10,  1.27it/s] 64%|██████▎   | 21/33 [00:16<00:09,  1.28it/s] 67%|██████▋   | 22/33 [00:17<00:08,  1.37it/s]{'eval_loss': 1.3617264032363892, 'eval_accuracy': 0.2894736842105263, 'eval_f1_macro': 0.22011494252873565, 'eval_runtime': 0.5815, 'eval_samples_per_second': 65.35, 'eval_steps_per_second': 5.159, 'epoch': 1.0}
+{'loss': 1.3154, 'grad_norm': 1.8446273803710938, 'learning_rate': 8.484848484848486e-06, 'epoch': 1.82}
+
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00, 10.53it/s][A                                               
+                                             [A 67%|██████▋   | 22/33 [00:18<00:08,  1.37it/s]
+100%|██████████| 3/3 [00:00<00:00, 10.53it/s][A
+                                             [A/private/tmp/takemeter-capstone-clean/.venv/lib/python3.12/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but not supported on MPS now, device pinned memory won't be used.
+  super().__init__(loader)
+ 70%|██████▉   | 23/33 [00:18<00:08,  1.12it/s] 73%|███████▎  | 24/33 [00:19<00:07,  1.16it/s] 76%|███████▌  | 25/33 [00:20<00:06,  1.19it/s] 79%|███████▉  | 26/33 [00:21<00:05,  1.22it/s] 82%|████████▏ | 27/33 [00:21<00:04,  1.24it/s] 85%|████████▍ | 28/33 [00:22<00:03,  1.25it/s] 88%|████████▊ | 29/33 [00:23<00:03,  1.25it/s] 91%|█████████ | 30/33 [00:24<00:02,  1.26it/s]                                                91%|█████████ | 30/33 [00:24<00:02,  1.26it/s] 94%|█████████▍| 31/33 [00:25<00:01,  1.27it/s] 97%|█████████▋| 32/33 [00:25<00:00,  1.27it/s]100%|██████████| 33/33 [00:26<00:00,  1.36it/s]{'eval_loss': 1.3349950313568115, 'eval_accuracy': 0.3684210526315789, 'eval_f1_macro': 0.2843874391862008, 'eval_runtime': 0.5782, 'eval_samples_per_second': 65.716, 'eval_steps_per_second': 5.188, 'epoch': 2.0}
+{'loss': 1.2813, 'grad_norm': 1.997436761856079, 'learning_rate': 2.4242424242424244e-06, 'epoch': 2.73}
+
+  0%|          | 0/3 [00:00<?, ?it/s][A
+ 67%|██████▋   | 2/3 [00:00<00:00,  9.90it/s][A                                               
+                                             [A100%|██████████| 33/33 [00:27<00:00,  1.36it/s]
+100%|██████████| 3/3 [00:00<00:00,  9.90it/s][A
+                                             [A                                               100%|██████████| 33/33 [00:27<00:00,  1.36it/s]100%|██████████| 33/33 [00:27<00:00,  1.22it/s]
+{'eval_loss': 1.3195046186447144, 'eval_accuracy': 0.3684210526315789, 'eval_f1_macro': 0.3363095238095238, 'eval_runtime': 0.6172, 'eval_samples_per_second': 61.568, 'eval_steps_per_second': 4.861, 'epoch': 3.0}
+{'train_runtime': 27.0737, 'train_samples_per_second': 19.059, 'train_steps_per_second': 1.219, 'train_loss': 1.3169625889171253, 'epoch': 3.0}
+Exported 268789816 bytes to models/takemeter

@@ -1,0 +1,7 @@
+{
+  "n": 10,
+  "mean_cpu_seconds": 0.0134817,
+  "mean_wall_seconds": 0.0108749,
+  "cold_first_request_seconds": 2.171063,
+  "scope": "warm request CPU process time; excludes setup, model load, GPU, idle time"
+}

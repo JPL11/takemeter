@@ -682,6 +682,211 @@ stretch work is planned.
 
 ## Running It
 
-**Path B — local with logs.** The operational run instructions will be added
-to [RUNNING.md](RUNNING.md). This machine has Python 3.12.13. The existing
+**Path B — local with logs.** The operational run instructions are in
+[RUNNING.md](RUNNING.md). This machine has Python 3.12.13. The existing
 notebook workflow remains documented there.
+
+
+## Instrumentation
+
+`run.py:main` appends one JSON record per input line to a file and flushes it
+before returning the response. Each record contains a UTC timestamp, full
+input, output (label and confidence, or null), status, request duration_ms,
+and process cpu_seconds. Errors include type and message. A malformed line
+is retained as a string so it remains inspectable. The first valid request
+includes model load time. Durations cover request processing before log and
+stdout writes; they do not measure downstream consumer time. No API is used.
+
+Ten real entries (eight successes and two intentional malformed inputs), from
+`evidence/after/t1-mixed.jsonl`, produced by `run.py:main` and
+`Classifier.predict`:
+
+```jsonl
+{"timestamp": "2026-11-09T03:59:57.328229+00:00", "input": {"text": "I'd rather have you answer it, so thanks. My point is that if intent or knowledge is required, that means you must be aware of a crime by you or someone else. Assuming your property has remained under your control, and that you have committed no crime (which is always supposed to be the presumption), the chief way by which you would find out that your own property, that you can usually destroy freely, is now deemed \"evidence\" and not to be destroyed, is by being charged with a crime involving said property. Until you are charged, you don't know it's evidence. So the charge is not irrelevant. Anyone can read the damn law, I'm saying the law is bullshit and rests on circular reasoning. Charging with destroying evidence will in some cases require presuming guilt for the crime the evidence supposedly supports."}, "output": {"label": "argument", "confidence": 0.32852572202682495}, "status": "ok", "duration_ms": 2188.896, "cpu_seconds": 2.194344}
+{"timestamp": "2026-11-09T03:59:59.517247+00:00", "input": {"text": "How do I get started though? :/ I feel like I need a couple mil in seed funding and a team that understands the mission."}, "output": {"label": "assertion", "confidence": 0.2763719856739044}, "status": "ok", "duration_ms": 6.996, "cpu_seconds": 0.007874}
+{"timestamp": "2026-11-09T03:59:59.524322+00:00", "input": {"text": "Any model that is going to be meaningfully useful is going to have the potential for harm too. It's not possible to know enough about chemistry to be useful to a chemist, without also being able to figure out how to synthesize drugs. It's not possible to have enough knowledge to be useful to any/all programmers, without being able to figure out how to hack a system, or create a virus. That's just kind of life though."}, "output": {"label": "argument", "confidence": 0.29212093353271484}, "status": "ok", "duration_ms": 13.294, "cpu_seconds": 0.016517}
+{"timestamp": "2026-11-09T03:59:59.537695+00:00", "input": {"text": "Its probably reached a certain level of intelligence but only operating in a very confined environment.\n\nAnd I assume heavily language based.\n\nHuman brains use language for communication and other things but it isnt the only part of intelligence.  There is also the intelligence of adapting and surviving in the world.\n\nUntil the AI can have a virtual environment or use the physical environment to interact with.  I am still not convinced."}, "output": {"label": "argument", "confidence": 0.2710903584957123}, "status": "ok", "duration_ms": 11.051, "cpu_seconds": 0.013606}
+{"timestamp": "2026-11-09T03:59:59.548811+00:00", "input": {"text": "In 1992, I got myself an AT&T EasyReach 700 number. It was going to be my phone number for life. They killed that a couple years later. Then I got an AT&T True Connections 500 number. It was going to be my phone number for life. That died a few years later too."}, "output": {"label": "argument", "confidence": 0.28477615118026733}, "status": "ok", "duration_ms": 11.457, "cpu_seconds": 0.013437}
+{"timestamp": "2026-11-09T03:59:59.560333+00:00", "input": {"text": "You can easily setup codex rules to auto approve local stuff but gate external effects like push/jira write/curl - works better for me than full yolo mode - depends if it's a solo project or working with a team."}, "output": {"label": "experience", "confidence": 0.2792125642299652}, "status": "ok", "duration_ms": 8.803, "cpu_seconds": 0.01034}
+{"timestamp": "2026-11-09T03:59:59.569203+00:00", "input": {"text": "Worth checking out the methodology this guy put together using Jev and Haiku at appropriate points to cut the cost and also speed up a deep research job:\nhttps://news.ycombinator.com/item?id=50019056"}, "output": {"label": "argument", "confidence": 0.2753179669380188}, "status": "ok", "duration_ms": 8.931, "cpu_seconds": 0.010543}
+{"timestamp": "2026-11-09T03:59:59.578192+00:00", "input": {"text": "This would be a good strategy if there are other people in the waiting area handing out coupons for competing restaurants, which is what is happening in Amazon."}, "output": {"label": "assertion", "confidence": 0.28722289204597473}, "status": "ok", "duration_ms": 7.636, "cpu_seconds": 0.00858}
+{"timestamp": "2026-11-09T03:59:59.585889+00:00", "input": "{", "output": null, "status": "error", "error": {"type": "JSONDecodeError", "message": "Expecting property name enclosed in double quotes: line 2 column 1 (char 2)"}, "duration_ms": 0.026, "cpu_seconds": 2.7e-05}
+{"timestamp": "2026-11-09T03:59:59.585930+00:00", "input": "not json", "output": null, "status": "error", "error": {"type": "JSONDecodeError", "message": "Expecting value: line 1 column 1 (char 0)"}, "duration_ms": 0.01, "cpu_seconds": 1.1e-05}
+```
+
+## What It Costs
+
+CPU time was measured with `time.process_time()` around request processing;
+wall time used `time.perf_counter()`. `capstone_trials.py:main` ran one warmup
+and ten held-out comments in a single CPU process, then averaged the ten
+records. These are measured CPU-seconds, not a claim about electricity or
+monetary cost. There is no per-request API charge. Setup/training, model
+loading, idle time, and output writing are excluded from the warm average.
+CPU time sums work across threads and can exceed elapsed wall time.
+
+| Measurement | Before | After |
+|---|---|---|
+| Mean CPU-seconds / warm request (n=10) | 0.0809414 | 0.0134817 |
+| Mean elapsed seconds / warm request | 0.0464503 | 0.0108749 |
+| First request, including model load (seconds) | 3.01042 | 2.17106 |
+
+Assuming 100 people each submit one comment per day to one warm process:
+100 × 0.0134817 = **1.34817 CPU-seconds/day**.
+For ten comments each, multiply by ten. Restarting for every person adds model
+load cost; the warm number does not cover that usage pattern. This is a small
+local sample, and other active processes can affect timings.
+
+Environment: Python 3.12.13, torch 2.14.1, macOS arm64, CPU inference with four
+threads. Export size: **268,789,816 bytes** (about 256.34 MiB). Exact installed
+versions are in requirements-lock.txt; metadata is in evidence/environment.json.
+
+## Run Log and Verdicts
+
+Capstone criteria were committed in `2ae0137`, before the first results commit
+`8e8292f`. Earlier Unit 6 results above are separate historical work.
+Three fresh processes per criterion were run without changing the classifier
+between trials. The five isolation cases each use a separate process with a
+bad request followed by a valid one. Raw records, stdout, stderr, summaries,
+and direct-reference labels are retained under `evidence/before/`.
+
+### Before improvement
+
+| Criterion | Target | Run 1 | Run 2 | Run 3 | Verdict |
+|---|---|---|---|---|---|
+| 1. Standalone inference | 10/10 | 10/10 | 10/10 | 10/10 | MET |
+| 2. Durable observability | 10/10 | 10/10 | 10/10 | 10/10 | MET |
+| 3. Bad-input isolation | 5/5 | 5/5 | 5/5 | 5/5 | MET |
+| 4. Warm latency ≤500 ms | ≥9/10 | 10/10 | 10/10 | 10/10 | MET |
+| 5. Prediction preservation | 10/10 | 10/10 | 10/10 | 10/10 | MET |
+
+All five are MET in every trial. There are no missed acceptance criteria to
+diagnose. Intentional bad inputs are successful tests of error handling:
+`run.py:main` catches JSON parsing and validation exceptions, logs the error,
+continues to the next request, then returns exit status 1 for the batch.
+The observed classification labels are not claims of semantic correctness.
+
+Actual output for each criterion, trial 1 (full inputs remain in raw files):
+
+Criterion 1, `evidence/before/t1-valid.jsonl`, `run.py:main` / `Classifier.predict`:
+
+```json
+{"timestamp": "2026-11-09T03:58:33.004269+00:00", "input": {"text": "I'd rather have you answer it, so thanks. My point is that if intent or knowledge is required, that means you must be aware of a crime by you or someone else. Assuming your property has remained under your control, and that you have committed no crime (which is always supposed to be the presumption), the chief way by which you would find out that your own property, that you can usually destroy freely, is now deemed \"evidence\" and not to be destroyed, is by being charged with a crime involving said property. Until you are charged, you don't know it's evidence. So the charge is not irrelevant. Anyone can read the damn law, I'm saying the law is bullshit and rests on circular reasoning. Charging with destroying evidence will in some cases require presuming guilt for the crime the evidence supposedly supports."}, "output": {"label": "argument", "confidence": 0.32852575182914734}, "status": "ok", "duration_ms": 2298.806, "cpu_seconds": 2.31999}
+```
+
+Criterion 2, `evidence/before/t1-mixed.jsonl`, `run.py:main` / `Classifier.predict`:
+
+```json
+{"timestamp": "2026-11-09T03:58:38.237075+00:00", "input": "not json", "output": null, "status": "error", "error": {"type": "JSONDecodeError", "message": "Expecting value: line 1 column 1 (char 0)"}, "duration_ms": 0.008, "cpu_seconds": 8e-06}
+```
+
+Criterion 3, `evidence/before/t1-bad0.jsonl`, `run.py:main` / `Classifier.predict`:
+
+```json
+{"timestamp": "2026-11-09T03:58:38.541435+00:00", "input": "{", "output": null, "status": "error", "error": {"type": "JSONDecodeError", "message": "Expecting property name enclosed in double quotes: line 2 column 1 (char 2)"}, "duration_ms": 0.112, "cpu_seconds": 8e-05}
+```
+
+Criterion 4, `evidence/before/t1-warm.jsonl`, `run.py:main` / `Classifier.predict`:
+
+```json
+{"timestamp": "2026-11-09T03:58:53.182967+00:00", "input": {"text": "I'd rather have you answer it, so thanks. My point is that if intent or knowledge is required, that means you must be aware of a crime by you or someone else. Assuming your property has remained under your control, and that you have committed no crime (which is always supposed to be the presumption), the chief way by which you would find out that your own property, that you can usually destroy freely, is now deemed \"evidence\" and not to be destroyed, is by being charged with a crime involving said property. Until you are charged, you don't know it's evidence. So the charge is not irrelevant. Anyone can read the damn law, I'm saying the law is bullshit and rests on circular reasoning. Charging with destroying evidence will in some cases require presuming guilt for the crime the evidence supposedly supports."}, "output": {"label": "argument", "confidence": 0.32852575182914734}, "status": "ok", "duration_ms": 24.571, "cpu_seconds": 0.046}
+```
+
+Criterion 5, `evidence/before/t1-valid.jsonl`, `run.py:main` / `Classifier.predict`:
+
+```json
+{"timestamp": "2026-11-09T03:58:33.004269+00:00", "input": {"text": "I'd rather have you answer it, so thanks. My point is that if intent or knowledge is required, that means you must be aware of a crime by you or someone else. Assuming your property has remained under your control, and that you have committed no crime (which is always supposed to be the presumption), the chief way by which you would find out that your own property, that you can usually destroy freely, is now deemed \"evidence\" and not to be destroyed, is by being charged with a crime involving said property. Until you are charged, you don't know it's evidence. So the charge is not irrelevant. Anyone can read the damn law, I'm saying the law is bullshit and rests on circular reasoning. Charging with destroying evidence will in some cases require presuming guilt for the crime the evidence supposedly supports."}, "output": {"label": "argument", "confidence": 0.32852575182914734}, "status": "ok", "duration_ms": 2298.806, "cpu_seconds": 2.31999}
+```
+
+Direct-reference labels from `capstone_trials.py:main`:
+
+```json
+["argument", "assertion", "argument", "argument", "argument", "experience", "argument", "assertion", "argument", "argument"]
+```
+
+## The Improvement
+
+**One change:** in `run.py:Classifier.predict`, replace fixed 256-token padding
+with no padding for single-comment inference; retain truncation at 256.
+The tokenizer's fixed-padding stage created unnecessary masked tokens for
+short comments. Attention masks preserve meaning, but the model still
+processes padded tensor positions. This is an efficiency improvement; no
+acceptance target was relaxed and no accuracy improvement is claimed.
+
+The reference check after the change explicitly tokenizes with the original
+fixed-length recipe and calls the exported model directly. It does not use
+the changed prediction method to generate expected labels. Before the change,
+the reference method itself was the fixed-length direct forward pass.
+
+### After improvement
+
+| Criterion | Target | Run 1 | Run 2 | Run 3 | Verdict |
+|---|---|---|---|---|---|
+| 1. Standalone inference | 10/10 | 10/10 | 10/10 | 10/10 | MET |
+| 2. Durable observability | 10/10 | 10/10 | 10/10 | 10/10 | MET |
+| 3. Bad-input isolation | 5/5 | 5/5 | 5/5 | 5/5 | MET |
+| 4. Warm latency ≤500 ms | ≥9/10 | 10/10 | 10/10 | 10/10 | MET |
+| 5. Prediction preservation | 10/10 | 10/10 | 10/10 | 10/10 | MET |
+
+The measured CPU reduction was
+83.3% on the ten-request cost sample.
+All 30 tested labels still matched fixed-length inference; probabilities can
+differ slightly due to numerical arithmetic. Both cost samples and all
+post-change raw output are retained under `evidence/after/`. This small sample
+supports the efficiency result for these comments, not a universal speedup.
+
+### Before and after together
+
+| Criterion | Before (trials 1 / 2 / 3) | After (trials 1 / 2 / 3) |
+|---|---|---|
+| Standalone inference | 10/10 / 10/10 / 10/10 | 10/10 / 10/10 / 10/10 |
+| Durable observability | 10/10 / 10/10 / 10/10 | 10/10 / 10/10 / 10/10 |
+| Bad-input isolation | 5/5 / 5/5 / 5/5 | 5/5 / 5/5 / 5/5 |
+| Warm latency ≤500 ms | 10/10 / 10/10 / 10/10 | 10/10 / 10/10 / 10/10 |
+| Prediction preservation | 10/10 / 10/10 / 10/10 | 10/10 / 10/10 / 10/10 |
+
+## What's Still Broken
+
+No capstone criterion remains missed. The classifier still has the accuracy
+and label weaknesses documented in Unit 6; passing operational tests does not
+fix them. The clean-checkout example even labels “This will never work.” as
+chatter. Model initialization takes seconds, malformed UTF-8 and unwritable
+logs are not covered by these criteria, and log files have no rotation.
+The exported weights are regenerated during setup rather than distributed;
+hardware and library changes can change the trained artifact.
+
+I stopped at the declared operational scope after the full before/after
+trials. Next unit I would first investigate argument/assertion and experience
+errors on independently labelled data. Those errors limit the usefulness of
+a thread skim more than additional runtime optimization would.
+
+The clean checkout was cloned into `/tmp/takemeter-capstone-clean`, given a
+new Python 3.12.13 virtual environment, installed from requirements-lock.txt,
+and ran export_model.py successfully. After fast-forwarding to the improvement
+commit, the documented batch command returned two predictions. The installation,
+export transcript, and real output are in evidence/clean-install.txt,
+evidence/clean-export.txt, and evidence/clean-checkout.jsonl. Initial installation
+used uv with the lock file; after bootstrapping pip with ensurepip, the literal
+`python -m pip install -r requirements-lock.txt` command also completed with
+exit 0 (evidence/clean-pip-install.txt). The existing `python test.py` check
+reported 9 passed, 0 failed, and one warning about running outside an activated
+virtual environment; it was invoked with the virtual environment's interpreter.
+
+The trials invoke fresh processes rather than replaying saved predictions.
+Identical labels across trials are expected for evaluation-mode inference on
+fixed weights; this unit does not retrain between requests.
+
+## How I Used AI — Capstone
+
+1. I asked Codex to help apply the assignment to TakeMeter. It inspected the
+   repository, found that training used save_strategy="no" and retained no
+   weights, and proposed Shape A with a local runner. I adopted that scope;
+   Codex reused the notebook's training functions for the export command.
+2. When asked to supply my own criteria, I asked Codex to create them. Codex
+   drafted all five criteria and reasons, committed them before trials,
+   implemented the runner and measurement harness, and made the padding
+   improvement. This differs from the course instruction to write criteria
+   unaided. The targets are AI-authored; I need to review and defend them
+   myself, and this disclosure does not make that requirement satisfied.
+
+Codex also ran the tests and wrote this report from the saved output. No
+results were invented, failed targets lowered, or Git history rewritten.
