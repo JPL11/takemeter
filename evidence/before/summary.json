@@ -1,0 +1,47 @@
+[
+  {
+    "trial": 1,
+    "standalone": "10/10",
+    "logging": "10/10",
+    "isolation": "5/5",
+    "latency": "10/10",
+    "regression": "10/10",
+    "met": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "trial": 2,
+    "standalone": "10/10",
+    "logging": "10/10",
+    "isolation": "5/5",
+    "latency": "10/10",
+    "regression": "10/10",
+    "met": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "trial": 3,
+    "standalone": "10/10",
+    "logging": "10/10",
+    "isolation": "5/5",
+    "latency": "10/10",
+    "regression": "10/10",
+    "met": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  }
+]

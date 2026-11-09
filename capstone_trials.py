@@ -22,7 +22,13 @@ def main():
     lines = [json.dumps({'text': text}) for text in texts]
     from run import Classifier
     reference = Classifier('models/takemeter')
-    reference_labels = [reference.predict(text)['label'] for text in texts]
+    # Independent fixed-length forward pass preserves the notebook's recipe.
+    reference_labels = []
+    for text in texts:
+        tokens = reference.tokenizer(text, truncation=True, padding='max_length', max_length=256, return_tensors='pt')
+        with reference.torch.inference_mode():
+            index = int(reference.model(**tokens).logits.argmax(dim=-1)[0])
+        reference_labels.append(reference.model.config.id2label[index])
     (folder / 'reference.json').write_text(json.dumps(reference_labels))
     summary = []
     for trial in range(1, 4):
