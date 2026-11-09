@@ -661,3 +661,27 @@ supported-comment signal rather than the four intended functions.
 ---
 
 📖 **How to run this project: [RUNNING.md](RUNNING.md)**
+
+
+## Capstone — What This Extends
+
+This extends TakeMeter, the existing locally trained Hacker News comment
+classifier from Units 5–6. The new work is a standalone inference command,
+persistent structured run records, and measured operating cost.
+
+## The Shape
+
+**Shape A — deploy and instrument.** Package the existing classifier so it
+can run outside Jupyter, record successful and failed requests in JSONL, and
+measure runtime over real requests. Exporting a trained model is required
+because the notebook previously used `save_strategy="no"`.
+
+Out of scope: changing the four labels or training recipe, adding a web
+interface or hosted service, and improving classification accuracy. No
+stretch work is planned.
+
+## Running It
+
+**Path B — local with logs.** The operational run instructions will be added
+to [RUNNING.md](RUNNING.md). This machine has Python 3.12.13. The existing
+notebook workflow remains documented there.
