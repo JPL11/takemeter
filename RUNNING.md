@@ -329,3 +329,53 @@ before you push.
 
 **Do not delete and recreate this repository.** You submit the same URL both
 units.
+
+## Capstone: standalone local deployment (Path B)
+
+Use Python **3.12.13** (tested on macOS Apple Silicon). From the repository root:
+
+```bash
+python3.12 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements-lock.txt
+python export_model.py
+```
+
+The lock file records exact installed versions, including transitive dependencies.
+Export reuses the notebook's training functions: seed 42, three epochs, length
+256, and the existing labels.csv. It does not overwrite the earlier results.
+First setup needs network access for distilbert-base-uncased; inference is offline.
+The exported model is approximately 268 MB; the measured size is in README.
+Allow the existing 9 GB disk / 6 GB RAM guidance above for installation/training.
+Weights live in ignored `models/takemeter/`, so a fresh clone must export them.
+A regenerated model can differ across hardware; equivalence tests use the same
+export for both the command and direct inference.
+
+**The single start command**, after setup:
+
+```bash
+python run.py
+```
+
+Enter one JSON object per line, such as `{"text":"Thanks for sharing!"}`.
+Send EOF (Ctrl-D on macOS/Linux) to stop. To provide a batch:
+
+```bash
+printf '%s\n' '{"text":"Thanks for sharing!"}' '{"text":"This will never work."}' | python run.py
+```
+
+Each request prints a JSON response and appends it to `logs/runs.jsonl`.
+`--log PATH` selects a different file; `--model PATH` selects an export.
+Errors also produce records; the process continues reading subsequent lines
+and exits 1 if any request failed. If the log cannot be opened, the process
+fails: check the path's write permissions. Logs include full input text; only
+use comments you intend to retain. CPU inference is used for measurement.
+
+To reproduce the acceptance trials (each destination must be new):
+
+```bash
+python capstone_trials.py evidence/my-trials
+```
+
+The committed before/after records were captured against their respective code
+versions. Running the current code produces new results, not the old baseline.
